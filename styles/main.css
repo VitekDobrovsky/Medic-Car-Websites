@@ -12,6 +12,8 @@
     --black: #0000;
     --white: #ffffff;
     --text: #565a7c;
+
+    --page-padding: 124px;
   }
 
   html {
@@ -22,4 +24,55 @@
   }
 }
 
+@layer design {
 
+  .page__header {
+    background-color: gainsboro;
+    height: 75dvh;
+    padding: 0 var(--page-padding, 124px);
+  }
+
+  /* navbar */
+  .navbar hr {
+    color: var(--text, #565a7c);
+    box-shadow: none;
+    border: .1px solid var(--text, #565a7c);
+  }
+
+  .navbar__wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em;
+  }
+
+  .navbar__items {
+    display: flex;
+  }
+
+  .navbar__item {
+    margin: 0 1em;
+  }
+
+  /* icon + text */
+  .icon-text {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-text img {
+    margin-right: 0.3em;
+  }
+
+  .icon-text a {
+    text-decoration: none;
+  }
+
+
+    /* small paragraph */
+  .small-paragraph {
+    font-size: 16px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    color: var(--text, #565a7c);
+  }
+}
