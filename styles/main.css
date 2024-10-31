@@ -27,12 +27,21 @@
 @layer design {
 
   .page__header {
-    background-color: gainsboro;
-    height: 75dvh;
-    padding: 0 var(--page-padding, 124px);
+    height: 80dvh;
+    display: flex;
+    justify-content: center;
+    padding: 0 5em;
+    background-image: url(../images/main-page/hero-image.png);
+    background-size: cover;
+    background-position: left;
+  }
+
+  .page__content {
+    max-width: 1500px;
   }
 
   /* navbar */
+
   .navbar hr {
     color: var(--text, #565a7c);
     box-shadow: none;
