@@ -1,0 +1,25 @@
+@layer reset, init, design;
+
+@import url(nomralize.css) layer(reset);
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100..900&display=swap");
+
+@layer init {
+  :root {
+    --primary: #178bf6;
+    --secondary: #0038ff;
+    --dark: #010321;
+    --light: #f6f6ff;
+    --black: #0000;
+    --white: #ffffff;
+    --text: #565a7c;
+  }
+
+  html {
+    font-family: "Lato", sans-serif;
+    color: var(--dark, #010321);
+    font-weight: 400;
+    background-color: var(--white, #ffffff);
+  }
+}
+
+
