@@ -1,7 +1,7 @@
 @layer reset, init, design;
 
 @import url(nomralize.css) layer(reset);
-@import url("https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:wght@100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 @layer init {
   :root {
@@ -25,12 +25,9 @@
 }
 
 @layer design {
-
   .page__header {
     height: 80dvh;
-    display: flex;
-    justify-content: center;
-    padding: 0 5em;
+    padding: 0 2em;
     background-image: url(../images/main-page/hero-image.png);
     background-size: cover;
     background-position: left;
@@ -38,14 +35,22 @@
 
   .page__content {
     max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .page__intro {
+    margin-top: 50px;
   }
 
   /* navbar */
 
+  .navbar {
+    display: block;
+  }
+
   .navbar hr {
     color: var(--text, #565a7c);
-    box-shadow: none;
-    border: .1px solid var(--text, #565a7c);
+    border: 0.1px solid var(--text, #565a7c);
   }
 
   .navbar__wrapper {
@@ -76,12 +81,50 @@
     text-decoration: none;
   }
 
-
-    /* small paragraph */
+  /* small paragraph */
   .small-paragraph {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 23px;
     letter-spacing: 0px;
     color: var(--text, #565a7c);
   }
+
+  /* h1 paragraph */
+  .h1 {
+    font-size: 73px;
+    font-family: "Montserrat", sans-serif;
+    line-height: 83px;
+    letter-spacing: -1.5px;
+    color: var(--dark, #010321);
+    margin: 0px;
+    font-weight: 650;
+  }
+
+  .h1--intro {
+    max-width: 9em;
+  }
+
+  .h3 {
+    font-size: 18px;
+    line-height: 21px;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    color: var(--primary, #178bf6);
+    margin: 0;
+    font-weight: 450;
+  }
+
+
+  .paragraph {
+    font-size: 16px;
+    line-height: 21px;
+    letter-spacing: 0px;
+    color: var(--text, #565a7c);
+  }
+
+  .paragraph--intro {
+    max-width: 32em;
+    margin-bottom: 3em;
+  }
+
 }
