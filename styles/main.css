@@ -39,8 +39,20 @@
   }
 
   .page__intro {
-    margin-top: 50px;
+    margin-top: 5em;
   }
+
+  .page__services {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
+  .pujcovna {
+    width: 75px;
+  }
+
 
   /* navbar */
 
@@ -91,21 +103,22 @@
 
   /* h1 paragraph */
   .h1 {
-    font-size: 73px;
+    font-size: 70px;
     font-family: "Montserrat", sans-serif;
-    line-height: 83px;
+    line-height: 81px;
     letter-spacing: -1.5px;
     color: var(--dark, #010321);
     margin: 0px;
-    font-weight: 650;
+    font-weight: 700;
   }
 
   .h1--intro {
     max-width: 9em;
+    margin-top: -5px;
   }
 
   .h3 {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 21px;
     letter-spacing: 1.8px;
     text-transform: uppercase;
@@ -116,7 +129,7 @@
 
 
   .paragraph {
-    font-size: 16px;
+    font-size: 17px;
     line-height: 21px;
     letter-spacing: 0px;
     color: var(--text, #565a7c);
@@ -124,7 +137,56 @@
 
   .paragraph--intro {
     max-width: 32em;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
+    margin-top: 14px;
+  }
+
+  .btn {
+    text-decoration: none;
+    color: var(--white, white);
+    text-transform: uppercase;
+    background-color: var(--secondary, #0038ff);
+    padding: 1.2em 3em;
+    font-size: 14px;
+    letter-spacing: 1.8px;
+    border-radius: 4px;
+    box-shadow: #565a7c;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .card {
+    background-color: var(--primary, #178bf6);
+    height: 350px;
+    width: 300px;
+    border-radius: 8px;
+    margin: -100px auto 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .card div {
+    padding: 1em;
+    padding-top: 2em;
+  }
+
+  .card .second {
+    display: flex;
+    flex-direction: column-reverse;
+    padding-bottom: 0;
+  }
+
+
+  .card h3 {
+    font-size: 28px;
+    letter-spacing: -1px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    color: var(--light, #f6f6ff);
+  }
+
+
+  .card__icon {
+    width: 60px;
   }
 
 }
