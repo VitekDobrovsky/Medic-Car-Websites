@@ -21,6 +21,7 @@
     color: var(--dark, #010321);
     font-weight: 400;
     background-color: var(--white, #ffffff);
+    scroll-behavior: smooth;
   }
 }
 
@@ -159,6 +160,7 @@
   }
 
   .card {
+    display: block;
     background-color: var(--primary, #178bf6);
     height: 350px;
     width: 300px;
@@ -170,6 +172,7 @@
     padding: 1em;
     padding-top: 2em;
     transition: 0.5s;
+    text-decoration: none;
   }
 
   .card:hover {
