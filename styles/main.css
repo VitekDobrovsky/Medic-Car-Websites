@@ -1,7 +1,7 @@
 @layer reset, init, design;
 
 @import url(nomralize.css) layer(reset);
-@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 
 @layer init {
   :root {
@@ -51,8 +51,8 @@
 
   .pujcovna {
     width: 75px;
+    transition: .5s;
   }
-
 
   /* navbar */
 
@@ -127,7 +127,6 @@
     font-weight: 450;
   }
 
-
   .paragraph {
     font-size: 17px;
     line-height: 21px;
@@ -152,6 +151,11 @@
     border-radius: 4px;
     box-shadow: #565a7c;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: .2s;
+  }
+
+  .btn:hover {
+    background-color: var(--primary, #178bf6);
   }
 
   .card {
@@ -160,13 +164,29 @@
     width: 300px;
     border-radius: 8px;
     margin: -100px auto 0 auto;
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-  }
-
-  .card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 1em;
     padding-top: 2em;
+    transition: 0.5s;
+  }
+
+  .card:hover {
+    transform: scale(1.01);
+    background-color: #315372;
+  }
+
+  .card:hover h3 {
+    transform: translate(5%, -100%);
+  }
+
+  .card:hover .card__icon {
+    transform: translate(40%, 50%);
+  }
+
+  .card:hover .pujcovna {
+    transform: translate(40%, 50%);
   }
 
   .card .second {
@@ -175,18 +195,17 @@
     padding-bottom: 0;
   }
 
-
   .card h3 {
     font-size: 28px;
     letter-spacing: -1px;
     font-weight: 700;
     font-family: "Montserrat", sans-serif;
     color: var(--light, #f6f6ff);
+    transition: .5s;
   }
-
 
   .card__icon {
     width: 60px;
+    transition: .5s all ease-in-out;
   }
-
 }
