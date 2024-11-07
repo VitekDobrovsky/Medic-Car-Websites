@@ -49,6 +49,11 @@
 
   .page__intro {
     margin-top: 5em;
+
+  }
+
+  .page__intro--autoservis {
+    margin-top: 50px;
   }
 
   .page__services {
@@ -59,6 +64,22 @@
     row-gap: 8em;
     column-gap: 3em;
     padding: 0 2em;
+  }
+
+  .page__services--autoservis {
+    max-width: 1500px;
+    margin: 200px auto;
+  }
+
+  .page__services--autoservis-heading {
+    display: grid;
+    place-items: center;
+  }
+
+  .page__services--autoservis-wrapper {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   @media (max-width: 1450px) {
@@ -194,7 +215,6 @@
 
   .h1--intro-autoservis {
     max-width: 10em;
-    margin-top: -40px;
   }
 
   .h3 {
@@ -257,7 +277,7 @@
     background-color: var(--primary, #178bf6);
     height: 350px;
     width: 300px;
-    border-radius: 8px;
+    border-radius: 4px;
     margin: -100px 0 0 0;
     display: flex;
     flex-direction: column;
@@ -302,8 +322,41 @@
 
   .card__icon {
     width: 60px;
+    transition: 0.3s;
+  }
+
+
+  .card--autoservis{
+    width: 325px;
+    height: 180px;
+    padding-top: .1em;
+    margin: 0;
+    background-color: var(--light, #f6f6ff);
+  }
+
+  .card--autoservis h3 {
+    color: var(--dark,#010321);
+  }
+
+  .card--autoservis:hover {
+    background-color: #EAEAEA;
+  }
+
+  .card--autoservis:hover h3 {
+    transform: translate(5%, 20%);
+
+  }
+
+  .card--autoservis__icon {
+    width: 80px;
     transition: 0.3s all ease-in-out;
   }
+
+  .card--autoservis:hover .card--autoservis__icon {
+    transform: translate(5%, -20%);
+    
+  }
+
 
   .footer {
     background-color: var(--light, #f6f6ff);
