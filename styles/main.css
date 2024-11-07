@@ -27,7 +27,7 @@
 
 @layer design {
   .page__header {
-    height: 80dvh;
+    height: 800px;
     padding: 0 2em;
     background-image: url(../images/main-page/hero-image.png);
     background-size: cover;
@@ -45,9 +45,45 @@
 
   .page__services {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
     max-width: 1500px;
     margin: 0 auto;
+    row-gap: 8em;
+    column-gap: 3em;
+    padding: 0 2em;
+  }
+
+  @media (max-width: 1450px) {
+    .card--left {
+      grid-column: 2;
+    }
+  }
+
+  @media (max-width: 875px) {
+    .page__services {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .card--left {
+      grid-column: auto;
+    }
+  }
+
+  @media (max-width: 770px) {
+    .page__services {
+      grid-template-columns: 1fr;
+      place-items: center;
+      padding: 0;
+    }
+  }
+  @media (max-width: 360px) {
+    .page__header {
+      height: 900px;
+    }
+
+    .navbar__items .icon-text a {
+      font-size: 0.7em;
+      margin-left: 0.5em;
+    }
   }
 
   .pujcovna {
@@ -74,10 +110,12 @@
 
   .navbar__items {
     display: flex;
+    gap: 2em;
   }
 
-  .navbar__item {
-    margin: 0 1em;
+  .navbar__logo {
+    width: 107px;
+    height: 50px;
   }
 
   /* icon + text */
@@ -166,7 +204,7 @@
     height: 350px;
     width: 300px;
     border-radius: 8px;
-    margin: -100px auto 0 auto;
+    margin: -100px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -284,10 +322,106 @@
   .footer h6 {
     font-size: 13px;
     font-weight: 500;
-    margin: 1em 0 .5em 0;
+    margin: 1em 0 0.5em 0;
   }
 
   .footer a:hover {
     color: rgb(132, 137, 180);
+  }
+
+  @media (max-width: 1415px) {
+    .footer__wrapper {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      row-gap: 2em;
+      column-gap: 2em;
+    }
+
+    .footer hr {
+      width: 100%;
+      margin: 0;
+    }
+
+    .footer__contact {
+      grid-row: 2;
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+
+    .footer__logo-wrapper {
+      grid-column: 2;
+    }
+
+    #copywrite {
+      grid-column-start: 2;
+      grid-column-end: 4;
+    }
+  }
+
+  @media (max-width: 1250px) {
+    .footer__contact {
+      grid-row: 2;
+      grid-column-start: 1;
+      grid-column-end: 5;
+      padding: 0 2em;
+    }
+  }
+
+  @media (max-width: 930px) {
+    .footer__wrapper {
+      grid-template-columns: 1fr;
+    }
+
+    .footer__logo-wrapper {
+      grid-column: 1;
+    }
+
+    .footer__contact {
+      grid-column: 1;
+    }
+    #copywrite {
+      grid-column: 1;
+    }
+
+    .footer__page-content {
+      grid-column: 1;
+      padding: 2em;
+    }
+    .footer__page-content ul {
+      display: grid;
+      place-items: center;
+    }
+  }
+
+  @media (max-width: 735px) {
+    .footer__contact-wrapper {
+      grid-template-columns: 1fr;
+      place-items: center;
+    }
+
+    
+
+  }
+
+  @media (max-width: 550px) {
+    .navbar__wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .navbar__items {
+      margin-top: 1.5em;
+      gap: 1em;
+      justify-content: space-around;
+    }
+
+    .navbar__wrapper .navbar__items .icon-text img {
+      margin: 0px;
+      width: auto;
+    }
+
+    .h1 {
+      font-size: 50px;
+      line-height: normal;
+    }
   }
 }
