@@ -27,7 +27,7 @@
 
 @layer design {
   .page__header {
-    height: 800px;
+    height: 900px;
     padding: 0 2em;
     background-size: cover;
     background-position: left;
@@ -98,6 +98,23 @@
     width: 75px;
     transition: 0.5s;
   }
+
+
+  .page__partners {
+    background-color: var(--light, #f6f6ff);
+    margin-top: -100px;
+  }
+
+  .page__partners-wrapper {
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-around;
+    row-gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+
 
   /* navbar */
 
