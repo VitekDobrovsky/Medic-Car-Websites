@@ -242,6 +242,16 @@
     background-color: var(--primary, #178bf6);
   }
 
+  .sticky-contact {
+    position: sticky;
+    top: 0;
+    padding: 1em 0;
+    background-color: var(--white, white);
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+  }
+
   .card {
     display: block;
     background-color: var(--primary, #178bf6);
