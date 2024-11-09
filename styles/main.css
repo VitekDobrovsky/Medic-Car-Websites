@@ -11,9 +11,10 @@
     --light: #f6f6ff;
     --black: #0000;
     --white: #ffffff;
-    --text: #565a7c;
+    --gray: #565a7c;
 
-    --page-padding: 124px;
+    --header-content-width: 1500px;
+    --section-content-width: 1500px;
   }
 
   html {
@@ -26,60 +27,51 @@
 }
 
 @layer design {
+
+  /* header */
   .page__header {
     height: 900px;
     padding: 0 2em;
     background-size: cover;
     background-position: left;
   }
-
+  .page__header-wrapper {
+    max-width: var(--header-content-width, 1500px);
+    margin: 0 auto;
+  }
+  .page__intro {
+    margin-top: 5em;
+  }
   .page__header--home {
     background-image: url(../images/main-page/hero-image.png);
   }
-
-
   .page__header--autoservis {
     background-image: url(../images/autoservis/hero-image.png);
-  }
-
-  .page__header-wrapper {
-    max-width: 1500px;
-    margin: 0 auto;
-  }
-
-  .page__intro {
-    margin-top: 5em;
-
-  }
-
-  .page__intro--autoservis {
     margin-top: 50px;
   }
 
+  /* services */
   .page__services {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    max-width: 1500px;
+    max-width: var(--section-content-width, 1500px);
     margin: 0 auto;
     row-gap: 8em;
     column-gap: 3em;
     padding: 0 2em;
   }
-
   .page__services--autoservis {
     max-width: 1500px;
     margin: 200px auto;
   }
-
   .page__services--autoservis-heading {
     display: grid;
     place-items: center;
   }
-
   .page__services--autoservis-wrapper {
-    display: grid;
+    display: flex;
+    flex-wrap: wrap;
     gap: 10px;
-    grid-template-columns: repeat(4, 1fr);
   }
 
   @media (max-width: 1450px) {
@@ -87,7 +79,6 @@
       grid-column: 2;
     }
   }
-
   @media (max-width: 875px) {
     .page__services {
       grid-template-columns: repeat(2, 1fr);
@@ -96,7 +87,6 @@
       grid-column: auto;
     }
   }
-
   @media (max-width: 770px) {
     .page__services {
       grid-template-columns: 1fr;
@@ -114,90 +104,78 @@
       margin-left: 0.5em;
     }
   }
-
   .pujcovna {
     width: 75px;
     transition: 0.5s;
   }
 
 
+  /* partners */
   .page__partners {
     background-color: var(--light, #f6f6ff);
     margin-top: -100px;
   }
-
   .page__partners-wrapper {
     padding: 2em 0;
     display: flex;
     justify-content: space-around;
     row-gap: 50px;
     flex-wrap: wrap;
-    max-width: 1500px;
+    max-width: var(--section-content-width, 1500px);
     margin: 0 auto;
   }
 
 
-  /* navbar */
 
+  /* COMPONENTS */
+
+
+  /* navbar */
   .navbar {
     display: block;
   }
-
   .navbar hr {
-    color: var(--text, #565a7c);
-    border: 0.1px solid var(--text, #565a7c);
+    color: var(--gray, #565a7c);
+    border: 0.1px solid var(--gray, #565a7c);
   }
-
   .navbar__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.7em;
   }
-
   .navbar__items {
     display: flex;
     gap: 2em;
   }
-
   .navbar__item {
-    color: var(--text, #565a7c);
+    color: var(--gray, #565a7c);
     text-decoration: none;
   }
-
   .navbar__item:hover {
     color: rgb(132, 137, 180);
   }
-
   .navbar__logo {
     width: 107px;
     height: 50px;
   }
+
 
   /* icon + text */
   .icon-text {
     display: flex;
     align-items: center;
   }
-
   .icon-text img {
     margin-right: 0.3em;
     height: 1em;
   }
-
   .icon-text a {
     text-decoration: none;
   }
 
-  /* small paragraph */
-  .small-paragraph {
-    font-size: 14px;
-    line-height: 23px;
-    letter-spacing: 0px;
-    color: var(--text, #565a7c);
-  }
 
-  /* h1 paragraph */
+  /* typography */
   .h1 {
     font-size: 70px;
     font-family: "Montserrat", sans-serif;
@@ -207,12 +185,10 @@
     margin: 0px;
     font-weight: 700;
   }
-
   .h1--intro {
     max-width: 9em;
     margin-top: -5px;
   }
-
   .h1--intro-autoservis {
     max-width: 10em;
   }
@@ -231,7 +207,7 @@
     font-size: 17px;
     line-height: 21px;
     letter-spacing: 0px;
-    color: var(--text, #565a7c);
+    color: var(--gray, #565a7c);
   }
 
   .paragraph--intro {
@@ -239,11 +215,19 @@
     margin-bottom: 4em;
     margin-top: 14px;
   }
-
   .paragraph--intro-autoservis {
     max-width: 30em;
   }
 
+  .small-paragraph {
+    font-size: 14px;
+    line-height: 23px;
+    letter-spacing: 0px;
+    color: var(--gray, #565a7c);
+  }
+
+
+  /* button */
   .btn {
     text-decoration: none;
     color: var(--white, white);
@@ -257,11 +241,12 @@
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     transition: 0.2s;
   }
-
   .btn:hover {
     background-color: var(--primary, #178bf6);
   }
 
+
+  /* sticky contact stripe */
   .sticky-contact {
     position: sticky;
     top: 0;
@@ -272,6 +257,8 @@
     margin-top: 3em;
   }
 
+
+  /* card */
   .card {
     display: block;
     background-color: var(--primary, #178bf6);
@@ -287,30 +274,11 @@
     transition: 0.3s;
     text-decoration: none;
   }
-
-  .card:hover {
-    transform: scale(1.01);
-    background-color: #315372;
-  }
-
-  .card:hover h3 {
-    transform: translate(5%, -100%);
-  }
-
-  .card:hover .card__icon {
-    transform: translate(40%, 50%);
-  }
-
-  .card:hover .pujcovna {
-    transform: translate(40%, 50%);
-  }
-
   .card .second {
     display: flex;
     flex-direction: column-reverse;
     padding-bottom: 0;
   }
-
   .card h3 {
     font-size: 28px;
     letter-spacing: -1px;
@@ -319,13 +287,23 @@
     color: var(--light, #f6f6ff);
     transition: 0.3s;
   }
-
   .card__icon {
     width: 60px;
     transition: 0.3s;
   }
-
-
+  .card:hover {
+    transform: scale(1.01);
+    background-color: #315372;
+  }
+  .card:hover h3 {
+    transform: translate(5%, -100%);
+  }
+  .card:hover .card__icon {
+    transform: translate(40%, 50%);
+  }
+  .card:hover .pujcovna {
+    transform: translate(40%, 50%);
+  }
   .card--autoservis{
     width: 325px;
     height: 180px;
@@ -346,77 +324,64 @@
     transform: translate(5%, 20%);
 
   }
-
-  .card--autoservis__icon {
+  .card__icon--small {
     width: 80px;
-    transition: 0.3s all ease-in-out;
   }
-
-  .card--autoservis:hover .card--autoservis__icon {
+  .card--autoservis:hover .card__icon--small {
     transform: translate(5%, -20%);
-    
   }
 
 
+  /* footer */
   .footer {
     background-color: var(--light, #f6f6ff);
     margin-top: 145px;
   }
-
   .footer__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
     padding-top: 1em;
-    max-width: 1500px;
+    max-width: var(--section-content-width, 1500px);
     margin: 0 auto;
   }
-
   .footer__contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1em;
   }
-
   .footer__logo-wrapper {
     display: grid;
     place-items: center;
   }
-
   .footer hr {
     width: 80%;
     margin: 0;
   }
-
   .footer ul {
     list-style-type: none;
     padding: 0;
   }
-
   .footer a {
     font-size: 12px;
     line-height: 23px;
     letter-spacing: 0px;
-    color: var(--text, #565a7c);
+    color: var(--gray, #565a7c);
     text-decoration: underline;
   }
-
   .footer__contact-wrapper a {
     text-decoration: none;
   }
-
   #copywrite {
     grid-column-start: 1;
     grid-column-end: 4;
     place-self: center;
     margin-top: 3em;
   }
-
   .footer p {
-    color: var(--text, #565a7c);
+    color: var(--gray, #565a7c);
     font-size: 12px;
     margin-top: 1px;
   }
-
   .footer h5 {
     margin: 0;
     font-size: 16px;
@@ -425,45 +390,37 @@
     color: var(--dark, #010321);
     margin-bottom: 2px;
   }
-
   .footer h6 {
     font-size: 13px;
     font-weight: 500;
     margin: 1em 0 0.5em 0;
   }
-
   .footer a:hover {
     color: rgb(132, 137, 180);
   }
-
   @media (max-width: 1415px) {
     .footer__wrapper {
       grid-template-columns: 1fr 1fr 1fr 1fr;
       row-gap: 2em;
       column-gap: 2em;
     }
-
     .footer hr {
       width: 100%;
       margin: 0;
     }
-
     .footer__contact {
       grid-row: 2;
       grid-column-start: 2;
       grid-column-end: 4;
     }
-
     .footer__logo-wrapper {
       grid-column: 2;
     }
-
     #copywrite {
       grid-column-start: 2;
       grid-column-end: 4;
     }
   }
-
   @media (max-width: 1250px) {
     .footer__contact {
       grid-row: 2;
@@ -472,7 +429,6 @@
       padding: 0 2em;
     }
   }
-
   @media (max-width: 930px) {
     .footer__wrapper {
       grid-template-columns: 1fr;
@@ -504,9 +460,6 @@
       grid-template-columns: 1fr;
       place-items: center;
     }
-
-    
-
   }
 
   @media (max-width: 550px) {
