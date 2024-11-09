@@ -93,7 +93,7 @@
   }
   .page__services--autoservis {
     max-width: 1500px;
-    margin: 200px auto;
+    margin: 100px auto;
   }
   .page__services--autoservis-heading {
     display: grid;
@@ -288,6 +288,7 @@
 
   /* sticky contact stripe */
   .sticky-contact {
+    z-index: 100;
     position: sticky;
     top: 0;
     padding: 1em 0;
