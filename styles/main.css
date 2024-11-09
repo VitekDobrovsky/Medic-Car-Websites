@@ -12,6 +12,7 @@
     --black: #0000;
     --white: #ffffff;
     --gray: #565a7c;
+    --gray-hover: rgb(132, 137, 180);
 
     --header-content-width: 1500px;
     --section-content-width: 1500px;
@@ -47,6 +48,8 @@
   }
   .page__header--autoservis {
     background-image: url(../images/autoservis/hero-image.png);
+  }
+  .page__intro--autoservis {
     margin-top: 50px;
   }
 
@@ -153,7 +156,7 @@
     text-decoration: none;
   }
   .navbar__item:hover {
-    color: rgb(132, 137, 180);
+    color: var(--gray-hover, rgb(132, 137, 180));
   }
   .navbar__logo {
     width: 107px;
@@ -396,7 +399,7 @@
     margin: 1em 0 0.5em 0;
   }
   .footer a:hover {
-    color: rgb(132, 137, 180);
+    color: var(--gray-hover), rgb(132, 137, 180);
   }
   @media (max-width: 1415px) {
     .footer__wrapper {
