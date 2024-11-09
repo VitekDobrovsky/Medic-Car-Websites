@@ -9,6 +9,7 @@
     --secondary: #0038ff;
     --dark: #010321;
     --light: #f6f6ff;
+    --light-hover: #EAEAEA;
     --black: #0000;
     --white: #ffffff;
     --gray: #565a7c;
@@ -102,6 +103,8 @@
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
+    padding-top: 32px;
+    justify-content: center;
   }
 
   @media (max-width: 1450px) {
@@ -131,7 +134,6 @@
 
     .navbar__items .icon-text a {
       font-size: 0.7em;
-      margin-left: 0.5em;
     }
   }
   .pujcovna {
@@ -219,6 +221,15 @@
     max-width: 10em;
   }
 
+  .h2 {
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: -1px;
+    color: var(--dark, #010321);
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 0;
+  }
+
   .h3 {
     font-size: 16px;
     line-height: 21px;
@@ -243,6 +254,9 @@
   }
   .paragraph--intro-autoservis {
     max-width: 30em;
+  }
+  .paragraph--services-autoservi {
+    margin-top: 8px;
   }
 
   .small-paragraph {
@@ -343,7 +357,7 @@
   }
 
   .card--autoservis:hover {
-    background-color: #EAEAEA;
+    background-color: var(--light-hover, #EAEAEA);
   }
 
   .card--autoservis:hover h3 {
@@ -351,10 +365,15 @@
 
   }
   .card__icon--small {
-    width: 80px;
+    width: 60px;
   }
+
+  .card__icon-wrapper {
+    text-align: right;
+  }
+
   .card--autoservis:hover .card__icon--small {
-    transform: translate(5%, -20%);
+    transform: translate(-5%, -20%);
   }
 
 
@@ -519,6 +538,11 @@
       margin-top: 1.5em;
       gap: 1em;
       justify-content: space-around;
+    }
+
+    .navbar__items .icon-text a {
+      font-size: 0.7em;
+      margin-left: .5em;
     }
 
     .navbar__wrapper .navbar__items .icon-text img {
