@@ -25,6 +25,33 @@
     background-color: var(--white, #ffffff);
     scroll-behavior: smooth;
   }
+
+  .navbar::after {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: var(--gray, #565a7c);
+    margin-top: 4px;
+  }
+
+  .footer__page-content::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 80%;
+    background-color: var(--gray, #565a7c);
+    margin-bottom: -8px;
+  }
+
+  .footer__contact::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 80%;
+    background-color: var(--gray, #565a7c);
+    margin-bottom: 2px;
+  }
 }
 
 @layer design {
@@ -136,10 +163,6 @@
   /* navbar */
   .navbar {
     display: block;
-  }
-  .navbar hr {
-    color: var(--gray, #565a7c);
-    border: 0.1px solid var(--gray, #565a7c);
   }
   .navbar__wrapper {
     display: flex;
@@ -347,19 +370,30 @@
     max-width: var(--section-content-width, 1500px);
     margin: 0 auto;
   }
+
+  .footer__contact {
+    display: flex;
+    flex-direction: column;
+  }
   .footer__contact-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 1em;
   }
+
+  .footer__contact h5{
+    order: -1;
+  }
+
+  .footer__page-content {
+    display: flex;
+    flex-direction: column;
+  }
   .footer__logo-wrapper {
     display: grid;
     place-items: center;
   }
-  .footer hr {
-    width: 80%;
-    margin: 0;
-  }
+
   .footer ul {
     list-style-type: none;
     padding: 0;
@@ -392,6 +426,7 @@
     text-transform: uppercase;
     color: var(--dark, #010321);
     margin-bottom: 2px;
+    order: -1;
   }
   .footer h6 {
     font-size: 13px;
@@ -407,7 +442,7 @@
       row-gap: 2em;
       column-gap: 2em;
     }
-    .footer hr {
+    .footer__page-content::before, .footer__contact::before {
       width: 100%;
       margin: 0;
     }
@@ -451,17 +486,26 @@
     .footer__page-content {
       grid-column: 1;
       padding: 2em;
+      display: flex;
+      flex-direction: column;
     }
     .footer__page-content ul {
-      display: grid;
-      place-items: center;
+      display: flex;
+      flex-direction: column;
     }
+
+    
   }
 
   @media (max-width: 735px) {
     .footer__contact-wrapper {
-      grid-template-columns: 1fr;
-      place-items: center;
+      display: flex;
+      flex-direction: column;
+      padding: 24px;
+    }
+
+    .footer__page-content ul {
+      padding: 24px;
     }
   }
 
