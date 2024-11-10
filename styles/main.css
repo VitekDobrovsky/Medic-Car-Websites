@@ -110,7 +110,36 @@
   }
 
   .page__about {
-    background-color: #565a7c;
+    background-image: url(./../images/autoservis/background1.png);
+    background-size: cover;
+    background-position: left;
+    height: 840px;
+    padding: 5em;
+  }
+
+  .page__about-content {
+    background-color: rgba(246, 246, 255, .79);
+    max-width: 1300px;
+    margin: 0 auto;
+    border-radius: 4px;
+    display: grid;
+    place-items: center;
+  }
+
+  .page__about-wrapper, .opening_hours__day-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+  } 
+
+  .page__about-wrapper {
+    justify-content: center;
+    width: 100%;
+  }
+
+  .opening_hours__day-wrapper {
+    justify-content: space-between;
+    width: 250px;
   }
 
   @media (max-width: 1450px) {
