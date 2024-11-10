@@ -163,6 +163,37 @@
     width: 100%;
   }
 
+
+  .page__rezervation {
+    position: relative;
+    height: 1000px;
+    margin-top: 430px;
+  }
+
+  .page__rezervation img {
+    position: absolute;
+    right: -10%;
+    top: 0;
+    z-index: -4;
+  }
+
+  .page__rezervation .h2, .page__rezervation .paragraph {
+    text-align: center;
+  }
+
+  .steps {
+    max-width: var(--section-content-width, 1500px);
+    margin: 0 auto;
+    display: grid;
+    gap: 56px;
+  }
+
+  .page__booking {
+    width: 400px;
+    height: 600px;
+    background-color: #555;
+  }
+
   
 
   @media (max-width: 1450px) {
