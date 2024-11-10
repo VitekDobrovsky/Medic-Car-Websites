@@ -235,6 +235,11 @@
     background-position: top;
     background-size: cover;
     height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5em;
+    padding-top: 6em;
   }
 
   @media (max-width: 1450px) {
@@ -425,6 +430,50 @@
   .icon-text a {
     text-decoration: none;
   }
+
+  .email-form {
+    padding: 2em;
+    background: rgb(205,219,230);
+    background: linear-gradient(180deg, rgba(205,219,230,1) 0%, rgba(215,221,241,1) 100%);
+    width: 400px;
+    height: 550px;
+    border-radius: 4px;
+  }
+
+  #contactForm {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .email-form label, .email-form .btn {
+    margin-bottom: .3em;
+    margin-top: 1.5em;
+  }
+
+  .email-form input {
+    height: 24px;
+  }
+
+  .email-form textarea {
+    height: 64px;
+  }
+
+  .email-form .btn {
+    text-align: center;
+    margin: 5em auto;
+    width: 100px;
+  }
+
+  .email-form .h4 {
+    text-align: center;
+    margin-top: 12px;
+  }
+  
+  input, textarea {
+    border: .5px solid var(--gray, #565a7c);
+    border-radius: 4px;
+  }
+
 
 
   /* typography */
