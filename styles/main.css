@@ -242,6 +242,10 @@
     font-weight: 450;
   }
 
+  .h3--dark {
+    color: var(--dark, #010321);
+  }
+
   .paragraph {
     font-size: 17px;
     line-height: 21px;
