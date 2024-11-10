@@ -6,6 +6,7 @@
 @layer init {
   :root {
     --primary: #178bf6;
+    --dark-blue: #0063c0;
     --secondary: #0038ff;
     --dark: #010321;
     --light: #f6f6ff;
@@ -53,6 +54,17 @@
     width: 80%;
     background-color: var(--gray, #565a7c);
     margin-bottom: 2px;
+  }
+  .faq {position: relative;}
+  .faq::after {
+    content: url("./../images/backgroun-light1.png");
+    display: block;
+    position: absolute;
+    top: -200%;
+    bottom: 0;
+    width: 100%;
+    z-index: -2;
+  
   }
 }
 
@@ -278,14 +290,14 @@
 
   /* faq */
 
-  .faq {
+  .faq__wrapper {
     max-width: 800px;
     margin: 0 auto;
   }
 
   .faq__title {
     text-align: center;
-    margin-bottom: 32px;
+    margin-bottom: 8px;
   }
 
   .faq__item {
@@ -305,7 +317,7 @@
   }
 
   .faq__question:hover {
-    color: #0056b3;
+    color: var(--dark-blue, #0063c0);
   }
 
   .faq__answer {
@@ -319,6 +331,10 @@
     display: block;
   }
 
+  .faq .h3 {
+    text-align: center;
+    margin-bottom: 32px;
+  }
 
 
   /* icon + text */
