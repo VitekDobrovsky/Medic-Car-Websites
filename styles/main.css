@@ -240,6 +240,15 @@
     align-items: center;
     gap: 5em;
     padding-top: 6em;
+    padding-bottom: 10em;
+  }
+
+  .page__contact-row2 .h4 {
+    margin-bottom: -8px;
+  }
+
+  .page__contact-row2 .paragraph {
+    margin-bottom: 56px;
   }
 
   @media (max-width: 1450px) {
@@ -755,6 +764,11 @@
     background-color: var(--light, #f6f6ff);
     margin-top: 145px;
   }
+
+  .footer--autoservis {
+    margin-top: 0px;
+  }
+
   .footer__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
