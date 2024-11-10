@@ -95,7 +95,8 @@
   }
   .page__services--autoservis {
     max-width: 1500px;
-    margin: 100px auto;
+    margin: 128px auto;
+    margin-bottom: 300px;
   }
   .page__services--autoservis-heading {
     display: grid;
@@ -113,7 +114,6 @@
     background-image: url(./../images/autoservis/background1.png);
     background-size: cover;
     background-position: left;
-    height: 840px;
     padding: 5em;
   }
 
@@ -122,14 +122,27 @@
     max-width: 1300px;
     margin: 0 auto;
     border-radius: 4px;
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3em;
+    padding-top: 2em;
+    gap: 12px;
+  }
+
+  .page__about-content .h2 {
+    margin: 0 0 16px 0;
+  }
+
+
+  .page__about-content .icon-text {
+    margin-bottom: 8px;
   }
 
   .page__about-wrapper, .opening_hours__day-wrapper {
     display: flex;
     flex-wrap: wrap;
-    gap: 2em;
+    gap: 40px;
   } 
 
   .page__about-wrapper {
@@ -137,10 +150,7 @@
     width: 100%;
   }
 
-  .opening_hours__day-wrapper {
-    justify-content: space-between;
-    width: 250px;
-  }
+  
 
   @media (max-width: 1450px) {
     .card--left {
@@ -265,6 +275,10 @@
     margin-bottom: 0;
   }
 
+  .h2--no-margin {
+    margin: 0;
+  }
+
   .h3 {
     font-size: 16px;
     line-height: 21px;
@@ -273,6 +287,13 @@
     color: var(--primary, #178bf6);
     margin: 0;
     font-weight: 450;
+  }
+
+  .h4 {
+    font-size: 24px;
+    line-height: 28px;
+    margin: 0;
+    color: var(--dark, #010321);
   }
 
   .h3--dark {
@@ -420,6 +441,71 @@
     transform: translate(-5%, -20%);
   }
 
+  .opening_hours__day-wrapper {
+    justify-content: space-between;
+    width: 250px;
+  }
+
+  .opening_hours__heading {
+    text-align: center;
+  }
+
+  .opening-hours .h4 {
+    margin-bottom: 12px;
+  }
+
+  .opening-hours__day, .opening-hours__time {
+    text-transform: uppercase;
+    color: var(--dark,  #010321);
+  }
+
+  .opening-hours__day--closed, .opening-hours__time--closed {
+    color: var(--gray, #565a7c);
+  }
+
+  @media (max-width: 1145px) {
+    .opening-hours {
+      order: -1;
+    }
+
+    .page__about-content .icon-text {
+      order: 1;
+    }
+  }
+
+  @media (max-width: 814px) {
+    .page__about-content .h2 {
+      font-size: 36px;
+    }
+
+    .page__location-map iframe {
+      width: 400px;
+      height: 400px;
+    }
+
+    .page__about-content .icon-text a {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 669px) {
+    .page__about-content .h2 {
+      font-size: 26px;
+    }
+
+    .page__about-content .icon-text a {
+      font-size: 12px;
+    }
+  }
+
+  @media (max-width: 669px) {
+    .page__about {
+      padding: 0;
+    }
+    .page__about-content {
+      width: auto;
+    }
+  }
 
   /* footer */
   .footer {
