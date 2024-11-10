@@ -109,6 +109,10 @@
     justify-content: center;
   }
 
+  .page__about {
+    background-color: #565a7c;
+  }
+
   @media (max-width: 1450px) {
     .card--left {
       grid-column: 2;
