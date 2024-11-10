@@ -54,19 +54,6 @@
     background-color: var(--gray, #565a7c);
     margin-bottom: 2px;
   }
-
-  .testimonials {
-    position: relative;
-  }
-  .testimonials::before{
-    content: url('./../images/background-rectangle.png');
-    position: absolute;
-    top: -50px;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -1;
-  }
 }
 
 @layer design {
@@ -218,7 +205,45 @@
 
 
   /* COMPONENTS */
+  .testimonials {
+    width: 100%;
+    height: 100vh; /* Full viewport height; adjust if needed */
+    background-image: url('./../images/background-rectangle.png'); /* Replace with your image path */
+    background-size: 100% 100%; /* Stretches image to fill the element */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat;
+  }
 
+  .testimonials__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .testimonials__review-wrapper {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    gap: 5em;
+  }
+
+  .testimonials__review {
+    width: 50em;
+  }
+
+  .testimonials .h4 {
+    margin-bottom: 40px;
+  }
+
+  .testimonials__author {
+    margin-top: 4px;
+  }
+
+  .testimonials__stars {
+    margin-bottom: 4px;
+  }
 
   /* navbar */
   .navbar {
@@ -307,6 +332,12 @@
     line-height: 28px;
     margin: 0;
     color: var(--dark, #010321);
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .h4--big {
+    font-size: 32px;
+    line-height: 34px;
   }
 
   .h3--dark {
