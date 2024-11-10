@@ -230,8 +230,12 @@
   }
 
 
-
-  
+  .page__contact {
+    background-image: url("./../images/contact-bacground.png");
+    background-position: top;
+    background-size: cover;
+    height: 800px;
+  }
 
   @media (max-width: 1450px) {
     .card--left {
