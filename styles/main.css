@@ -25,6 +25,7 @@
     font-weight: 400;
     background-color: var(--white, #ffffff);
     scroll-behavior: smooth;
+    overflow-x: hidden;
   }
 
   .navbar::after {
@@ -52,6 +53,19 @@
     width: 80%;
     background-color: var(--gray, #565a7c);
     margin-bottom: 2px;
+  }
+
+  .testimonials {
+    position: relative;
+  }
+  .testimonials::before{
+    content: url('./../images/background-rectangle.png');
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
   }
 }
 
@@ -201,7 +215,6 @@
     max-width: var(--section-content-width, 1500px);
     margin: 0 auto;
   }
-
 
 
   /* COMPONENTS */
