@@ -557,6 +557,12 @@
     max-width: 10em;
   }
 
+  @media (max-width: 469px) {
+    .paragraph--services-autoservi {
+      text-align: center;
+    }
+  }
+
   .h2 {
     font-size: 48px;
     line-height: 55px;
@@ -808,6 +814,28 @@
     }
     .page__about-content {
       width: auto;
+    }
+  }
+
+  @media (max-width: 420px) {
+    .page__about-content {
+      padding: 0;
+    }
+
+    .page__location-map {
+      display: grid;
+      place-content: center;
+    }
+
+    .page__location-map iframe{
+      width: 100%;
+    }
+    .page__about-content .icon-text a {
+      font-size: 10px;
+    }
+
+    .page__about-content .icon-text {
+      padding-left: 1em;
     }
   }
 
