@@ -135,6 +135,12 @@
     justify-content: center;
   }
 
+  @media (max-width: 814px) {
+    .page__services--autoservis-heading .h2 {
+      font-size: 36px;
+    }
+  }
+
   .page__about {
     background-image: url(./../images/autoservis/background1.png);
     background-size: cover;
@@ -179,6 +185,8 @@
     position: relative;
     height: 1000px;
     margin-top: 430px;
+    padding: 3em;
+
   }
 
   .page__rezervation img {
@@ -191,6 +199,18 @@
   .page__rezervation .h2,
   .page__rezervation .paragraph {
     text-align: center;
+  }
+
+  
+
+  @media (max-width: 1415px){
+    .page__rezervation img {
+      display: none;
+    }
+
+    .page__rezervation .steps {
+      place-content: center;
+    }
   }
 
   .steps {
@@ -210,10 +230,51 @@
   .steps__content {
     font-weight: 650;
     font-family: "Montserrat", sans-serif;
+    color: var(--dark, #010321);
+    font-family: "Montserrat", sans-serif;
+    font-size: 32px;
+    line-height: 34px;
   }
 
   .steps__text-wrapper > * {
     margin: 0;
+  }
+    
+
+
+
+  @media (max-width: 814px) {
+    .page__rezervation .h2 {
+      font-size: 36px;
+    }
+
+    .steps__content{
+      font-size: 24px;
+    }
+
+    .page__rezervation .paragraph {
+      font-size: 16px;
+    }
+
+    .steps ::before {
+      display: none;
+    }
+
+    .steps_step {
+      text-align: center;
+    }
+
+    .steps__text-wrapper {
+      width: 100%;
+      padding: 0;
+    }
+
+  }
+
+  @media (max-width: 390px) {
+    .page__rezervation .h2 {
+      font-size: 28px;
+    }
   }
 
   .page__booking {
@@ -260,6 +321,10 @@
     }
     .card--left {
       grid-column: auto;
+    }
+
+    .card--autoservis .card__heading{
+      font-size: 24px;
     }
   }
   @media (max-width: 770px) {
@@ -804,6 +869,7 @@
   @media (max-width: 814px) {
     .page__about-content .h2 {
       font-size: 36px;
+      text-align: center;
     }
 
     .page__location-map iframe {
@@ -817,9 +883,7 @@
   }
 
   @media (max-width: 669px) {
-    .page__about-content .h2 {
-      font-size: 26px;
-    }
+
 
     .page__about-content .icon-text a {
       font-size: 12px;
