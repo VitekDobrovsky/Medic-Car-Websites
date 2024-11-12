@@ -82,20 +82,112 @@
   }
 }
 
+/* 
+link in autoservis header description
+*/
+
 @layer design {
+  /* COMPONENTS */
+
+  /* section */
+  .section {
+    max-width: var(--section-content-width, 1500px);
+    margin: 0 auto;
+    padding: 0 2em;
+  }
+
+  /* navabar */
+  .navbar__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7em;
+  }
+  .navbar__items {
+    display: flex;
+    gap: 2em;
+  }
+  .navbar__item {
+    color: var(--gray, #565a7c);
+    text-decoration: none;
+  }
+  .navbar__item:hover {
+    color: var(--gray-hover, rgb(132, 137, 180));
+  }
+  .navbar__logo {
+    width: 107px;
+    height: 50px;
+  }
+  .navbar__hamburger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 24px;
+    height: 24px;
+    z-index: 101;
+  }
+  .navbar__hamburger .bar {
+    width: 100%;
+    height: 1px;
+    background-color: var(--gray, #565a7c);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+
+  @media (max-width: 768px) {
+    .navbar__hamburger {
+      display: flex;
+    }
+    .navbar__items {
+      display: none;
+      flex-direction: column;
+      justify-content: space-around;
+      gap: 2em;
+      position: absolute;
+      height: 50dvh;
+      text-align: center;
+      top: 0;
+      left: 0;
+      right: 0;
+      background-color: var(--white, white);
+      padding: 1em;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+    .navbar__items.active {
+      display: flex;
+    }
+    .navbar__hamburger.active .bar:nth-child(1) {
+      transform: rotate(45deg) translate(5px, 6px);
+    }
+    .navbar__hamburger.active .bar:nth-child(2) {
+      opacity: 0;
+    }
+    .navbar__hamburger.active .bar:nth-child(3) {
+      transform: rotate(-45deg) translate(5px, -6px);
+    }
+  }
+
+  /* sticky contact stripe */
+  .sticky-contact {
+    z-index: 100;
+    position: sticky;
+    top: 0;
+    padding: 1em 0;
+    background-color: var(--white, white);
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+  }
+  
+
+  /* SECTIONS */
+
   /* header */
   .page__header {
     height: 780px;
-    padding: 0 2em;
     background-size: cover;
     background-position: left;
-  }
-  .page__header-wrapper {
-    max-width: var(--header-content-width, 1500px);
-    margin: 0 auto;
-  }
-  .page__intro {
-    margin-top: 5em;
   }
   .page__header--home {
     background-image: url(../images/main-page/hero-image.png);
@@ -107,19 +199,35 @@
   .page__intro--autoservis {
     margin-top: 50px;
   }
+  .page__intro {
+    margin-top: 5em;
+  }
+
+  /* partners */
+  .page__partners {
+    background-color: var(--light, #f6f6ff);
+    margin-top: -100px;
+  }
+  .page__partners-wrapper {
+    padding: 2em 0;
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    flex-wrap: wrap;
+    max-width: var(--section-content-width, 1500px);
+    margin: 0 auto;
+  }
 
   /* services */
   .page__services {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    max-width: var(--section-content-width, 1500px);
     margin: 0 auto;
     row-gap: 8em;
     column-gap: 3em;
     padding: 0 2em;
   }
   .page__services--autoservis {
-    max-width: 1500px;
     margin: 128px auto;
     margin-bottom: 300px;
   }
@@ -133,12 +241,6 @@
     gap: 10px;
     padding-top: 32px;
     justify-content: center;
-  }
-
-  @media (max-width: 814px) {
-    .page__services--autoservis-heading .h2 {
-      font-size: 36px;
-    }
   }
 
   .page__about {
@@ -163,6 +265,7 @@
 
   .page__about-content .h2 {
     margin: 0 0 16px 0;
+    text-align: center;
   }
 
   .page__about-content .icon-text {
@@ -185,8 +288,7 @@
     position: relative;
     height: 1000px;
     margin-top: 430px;
-    padding: 3em;
-
+    padding: 3em 1em;
   }
 
   .page__rezervation img {
@@ -201,9 +303,7 @@
     text-align: center;
   }
 
-  
-
-  @media (max-width: 1415px){
+  @media (max-width: 1415px) {
     .page__rezervation img {
       display: none;
     }
@@ -239,16 +339,10 @@
   .steps__text-wrapper > * {
     margin: 0;
   }
-    
-
-
 
   @media (max-width: 814px) {
-    .page__rezervation .h2 {
-      font-size: 36px;
-    }
 
-    .steps__content{
+    .steps__content {
       font-size: 24px;
     }
 
@@ -268,14 +362,8 @@
       width: 100%;
       padding: 0;
     }
-
   }
 
-  @media (max-width: 390px) {
-    .page__rezervation .h2 {
-      font-size: 28px;
-    }
-  }
 
   .page__booking {
     width: 400px;
@@ -299,7 +387,6 @@
     flex-wrap: wrap;
     gap: 5em;
     padding: 12em 2em 10em 2em;
-  
   }
 
   .page__contact-row2 .h4 {
@@ -316,7 +403,6 @@
     }
   }
   @media (max-width: 1190px) {
-
     .page__contact {
       padding-top: 18em;
     }
@@ -324,7 +410,7 @@
       order: -1;
     }
 
-    .page__contact-row2 .h4, 
+    .page__contact-row2 .h4,
     .page__contact-row2 .paragraph {
       text-align: center;
     }
@@ -338,11 +424,9 @@
       grid-column: auto;
     }
 
-    .card--autoservis .card__heading{
+    .card--autoservis .card__heading {
       font-size: 24px;
     }
-
-    
   }
   @media (max-width: 770px) {
     .page__services {
@@ -352,16 +436,16 @@
     }
   }
 
+  @media (max-width: 787px) {
+    .card--autoservis {
+      min-width: 100%;
+    }
+  }
+
   @media (max-width: 660px) {
     .page__contact-row2 img {
       width: 100%;
       height: auto;
-    }
-
-
-    .card--autoservis {
-      max-width: 250px;
-      max-height: 150px;
     }
 
 
@@ -374,33 +458,17 @@
     .navbar__items .icon-text a {
       font-size: 0.7em;
     }
-
   }
   .pujcovna {
     width: 75px;
     transition: 0.5s;
   }
 
-  /* partners */
-  .page__partners {
-    background-color: var(--light, #f6f6ff);
-    margin-top: -100px;
-  }
-  .page__partners-wrapper {
-    padding: 2em 0;
-    display: flex;
-    justify-content: space-around;
-    row-gap: 50px;
-    flex-wrap: wrap;
-    max-width: var(--section-content-width, 1500px);
-    margin: 0 auto;
-  }
-
   /* COMPONENTS */
   .testimonials {
     width: 100%;
     height: 100vh;
-    background-image: url("./../images/background-rectangle.png"); 
+    background-image: url("./../images/background-rectangle.png");
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -456,89 +524,6 @@
     .testimonials__review-wrapper {
       gap: 2em;
     }
-
-  }
-
-  /* navbar */
-  .navbar {
-    display: block;
-  }
-  .navbar__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.7em;
-  }
-  .navbar__items {
-    display: flex;
-    gap: 2em;
-  }
-  .navbar__item {
-    color: var(--gray, #565a7c);
-    text-decoration: none;
-  }
-  .navbar__item:hover {
-    color: var(--gray-hover, rgb(132, 137, 180));
-  }
-  .navbar__logo {
-    width: 107px;
-    height: 50px;
-  }
-
-  /* Existing styles remain unchanged */
-
-  .navbar__hamburger {
-    display: none; /* Only show on mobile */
-    cursor: pointer;
-    flex-direction: column;
-    justify-content: space-around;
-    width: 24px;
-    height: 24px;
-  }
-
-  .navbar__hamburger .bar {
-    width: 100%;
-    height: 3px;
-    background-color: var(--gray, #565a7c);
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-
-  /* Mobile View */
-  @media (max-width: 768px) {
-    .navbar__hamburger {
-      display: flex;
-    }
-
-    .navbar__items {
-      display: none;
-      flex-direction: column;
-      gap: 1em;
-      position: absolute;
-      top: 60px;
-      left: 0;
-      right: 0;
-      background-color: var(--white, white);
-      padding: 1em;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      z-index: 1;
-    }
-
-    .navbar__items.active {
-      display: flex;
-    }
-
-    /* Transform the bars into an "X" when active */
-    .navbar__hamburger.active .bar:nth-child(1) {
-      transform: rotate(45deg) translate(5px, 6px);
-    }
-
-    .navbar__hamburger.active .bar:nth-child(2) {
-      opacity: 0; /* Hide the middle bar */
-    }
-
-    .navbar__hamburger.active .bar:nth-child(3) {
-      transform: rotate(-45deg) translate(5px, -6px);
-    }
   }
 
   /* faq */
@@ -550,6 +535,7 @@
   .faq__wrapper {
     max-width: 800px;
     margin: 0 auto;
+    padding: 0 1em;
   }
 
   .faq__title {
@@ -673,12 +659,6 @@
     max-width: 10em;
   }
 
-  @media (max-width: 469px) {
-    .paragraph--services-autoservi {
-      text-align: center;
-    }
-  }
-
   .h2 {
     font-size: 48px;
     line-height: 55px;
@@ -690,6 +670,18 @@
 
   .h2--no-margin {
     margin: 0;
+  }
+
+  @media (max-width: 700px) {
+    .h1 {
+      font-size: 2.074rem;
+      line-height: normal;
+    }
+
+    .h2 {
+      font-size: 2.488rem;
+      line-height: normal;
+    }
   }
 
   .h3 {
@@ -745,6 +737,7 @@
   }
   .paragraph--services-autoservi {
     margin-top: 8px;
+    text-align: center;
   }
 
   .page__services--autoservis-dph {
@@ -774,18 +767,6 @@
   }
   .btn:hover {
     background-color: var(--primary, #178bf6);
-  }
-
-  /* sticky contact stripe */
-  .sticky-contact {
-    z-index: 100;
-    position: sticky;
-    top: 0;
-    padding: 1em 0;
-    background-color: var(--white, white);
-    display: flex;
-    justify-content: center;
-    margin-top: 3em;
   }
 
   /* card */
@@ -900,10 +881,6 @@
   }
 
   @media (max-width: 814px) {
-    .page__about-content .h2 {
-      font-size: 36px;
-      text-align: center;
-    }
 
     .page__location-map iframe {
       width: 400px;
@@ -916,8 +893,6 @@
   }
 
   @media (max-width: 669px) {
-
-
     .page__about-content .icon-text a {
       font-size: 12px;
     }
@@ -1109,29 +1084,4 @@
     }
   }
 
-  @media (max-width: 550px) {
-    .navbar__wrapper {
-    }
-
-    .navbar__items {
-      margin-top: 1.5em;
-      gap: 1em;
-      justify-content: space-around;
-    }
-
-    .navbar__items .icon-text a {
-      font-size: 0.7em;
-      margin-left: 0.5em;
-    }
-
-    .navbar__wrapper .navbar__items .icon-text img {
-      margin: 0px;
-      width: auto;
-    }
-
-    .h1 {
-      font-size: 50px;
-      line-height: normal;
-    }
-  }
 }
