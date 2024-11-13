@@ -214,7 +214,6 @@ link in autoservis header description
     justify-content: space-around;
     gap: 24px;
     flex-wrap: wrap;
-    max-width: var(--section-content-width, 1500px);
     margin: 0 auto;
   }
 
@@ -314,7 +313,6 @@ link in autoservis header description
   }
 
   .steps {
-    max-width: var(--section-content-width, 1500px);
     margin: 0 auto;
     display: grid;
     gap: 56px;
@@ -949,7 +947,6 @@ link in autoservis header description
     display: grid;
     grid-template-columns: 1fr 1fr 3fr;
     padding-top: 1em;
-    max-width: var(--section-content-width, 1500px);
     margin: 0 auto;
   }
 
