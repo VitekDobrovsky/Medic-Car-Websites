@@ -642,6 +642,12 @@ link in autoservis header description
   }
 
   /* typography */
+  a {
+    text-decoration: none;
+    color: var(--secondary, #0038ff);
+  }
+
+
   .h1 {
     font-size: 70px;
     font-family: "Montserrat", sans-serif;
@@ -674,12 +680,12 @@ link in autoservis header description
 
   @media (max-width: 700px) {
     .h1 {
-      font-size: 2.074rem;
+      font-size: 2.986rem;
       line-height: normal;
     }
 
     .h2 {
-      font-size: 2.488rem;
+      font-size: 2.074rem;
       line-height: normal;
     }
   }
