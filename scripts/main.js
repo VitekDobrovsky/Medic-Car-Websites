@@ -35,10 +35,6 @@ document.addEventListener("DOMContentLoaded", function () {
       text: "„Prostě jsou dobří. Co víc dodat“",
       author: "Pavel J.",
     },
-    {
-      text: "„Prostě jsou dobří. Co víc dodat“",
-      author: "Pavel J.",
-    },
   ];
 
   let currentTestimonialIndex = 0;

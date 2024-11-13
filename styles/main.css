@@ -461,7 +461,7 @@ link in autoservis header description
   /* COMPONENTS */
   .testimonials {
     width: 100%;
-    height: 100vh;
+    height: 900px;
     background-image: url("./../images/background-rectangle.png");
     background-size: 100% 100%;
     background-position: center;
@@ -476,21 +476,71 @@ link in autoservis header description
     height: 100%;
   }
 
+  .testimonials__wrapper .h4 {
+    text-align: center;
+  }
+
   .testimonials__review-wrapper {
     display: flex;
     justify-content: space-around;
     text-align: center;
     gap: 5em;
     padding: 0 2em;
+    height: 7em;
   }
 
   .testimonials__review {
     width: 50em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 
-  @media (max-width: 1415px) {
+  @media (max-width: 1170px) {
     .testimonials__review {
-      width: auto;
+      width: 30em;
+    }
+  }
+
+  @media (max-width: 795px) {
+    .testimonials__review {
+      width: 20em;
+    }
+
+    .testimonials__review-wrapper {
+      height: 15em;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .testimonials__review {
+      width: 15em;
+    }
+    .testimonials__review-wrapper {
+      height: 20em;
+    }
+
+    .testimonials {
+      height: 1000px;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .testimonials__review {
+      width: 12em;
+    }
+
+  }
+
+  @media (max-width: 425px) {
+    .testimonials__review {
+      width: 10em;
+    }
+    .testimonials__review-wrapper {
+      height: 22em;
+    }
+    .testimonials {
+      height: 1200px;
     }
   }
 
@@ -514,16 +564,6 @@ link in autoservis header description
 
   .testimonial__arrow:hover {
     cursor: pointer;
-  }
-
-  @media (max-width: 470px) {
-    .testimonials {
-      height: 1200px;
-    }
-
-    .testimonials__review-wrapper {
-      gap: 2em;
-    }
   }
 
   /* faq */
