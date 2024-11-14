@@ -198,6 +198,11 @@ link in autoservis header description
   .page__intro--autoservis {
     margin-top: 50px;
   }
+
+  .page__header--taxi {
+    background-image: url(../images/taxi/hero-image.png);
+  }
+
   .page__intro {
     margin-top: 5em;
   }
