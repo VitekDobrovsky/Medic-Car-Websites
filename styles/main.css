@@ -265,7 +265,14 @@
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 5em;
-    padding: 5em;
+    padding: 5em 0;
+  }
+
+  @media (max-width: 660px) {
+    .page__pricing-image {
+      width: 100%;
+      height: auto;
+    }
   }
 
   .page__pricing-wrapper {
@@ -274,6 +281,7 @@
 
   .page__pricing-image {
     border-radius: 4px;
+    margin: 0 auto;
   }
 
   .page__pricing-price {
