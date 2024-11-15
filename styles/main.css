@@ -62,9 +62,7 @@
     content: url("./../images/backgroun-light-stripe.png");
     display: block;
     position: absolute;
-    top: -230%;
-    bottom: 0;
-    width: 100%;
+    top: -700px;
     z-index: -2;
   }
 
@@ -82,9 +80,6 @@
   }
 }
 
-/* 
-link in autoservis header description
-*/
 
 @layer design {
   /* COMPONENTS */
@@ -142,9 +137,7 @@ link in autoservis header description
       display: none;
       flex-direction: column;
       justify-content: space-around;
-      gap: 2em;
       position: absolute;
-      height: 50dvh;
       text-align: center;
       top: 0;
       left: 0;
@@ -154,6 +147,11 @@ link in autoservis header description
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       z-index: 1;
     }
+
+    .navbar__item {
+      padding: 1em;
+    }
+
     .navbar__items.active {
       display: flex;
     }
@@ -177,7 +175,15 @@ link in autoservis header description
     background-color: var(--white, white);
     display: flex;
     justify-content: center;
+    gap: 1em;
+  }
+
+  .sticky-contact--autoservis {
     margin-top: 3em;
+  }
+
+  .sticky-contact--taxi {
+    margin-top: 1em;
   }
 
   /* SECTIONS */
@@ -390,6 +396,10 @@ link in autoservis header description
     padding: 12em 2em 10em 2em;
   }
 
+  .page__contact-image {
+    border-radius: 4px;
+  }
+
   .page__contact-row2 .h4 {
     margin-bottom: -8px;
   }
@@ -534,7 +544,6 @@ link in autoservis header description
     .testimonials__review {
       width: 12em;
     }
-
   }
 
   @media (max-width: 425px) {
@@ -575,6 +584,56 @@ link in autoservis header description
 
   .faq {
     margin-top: 124px;
+  }
+
+  .faq__wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 1em;
+  }
+
+  .faq__title {
+    text-align: center;
+    margin-bottom: 16px; /* Increased margin for better spacing */
+  }
+
+  .faq__item {
+    background-color: var(--light, #f6f6ff);
+    padding: 20px; /* Increased padding for better spacing */
+    border-radius: 8px;
+    margin: 16px 0; /* Increased margin for better spacing */
+    transition: background-color 0.3s ease; /* Added transition for hover effect */
+  }
+
+  .faq__item:hover {
+    background-color: var(--light-hover, #eaeaea); /* Hover effect */
+  }
+
+  .faq__question {
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    padding: 12px 0; /* Increased padding for better spacing */
+    font-size: 18px; /* Increased font size for better readability */
+    transition: color 0.3s ease; /* Added transition for hover effect */
+  }
+
+  .faq__question:hover {
+    color: var(--dark-blue, #0063c0); /* Hover effect */
+  }
+
+  .faq__answer {
+    font-size: 16px;
+    color: #555;
+    display: none;
+    padding-top: 10px;
+    line-height: 1.5; /* Increased line height for better readability */
+  }
+
+  .faq__item.open .faq__answer {
+    display: block;
   }
 
   .faq__wrapper {
@@ -696,7 +755,7 @@ link in autoservis header description
     font-size: 70px;
     font-family: "Montserrat", sans-serif;
     line-height: 81px;
-    letter-spacing: -1.5px;
+    letter-spacing: -1px;
     color: var(--dark, #010321);
     margin: 0px;
     font-weight: 700;
