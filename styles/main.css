@@ -256,8 +256,13 @@
     margin-top: 5em;
   }
 
-  .page__pricing-header {
+  .page__pricing-heading {
     text-align: center;
+  }
+
+  .page__pricing-paragraph {
+    text-align: center;
+    margin-top: 1em;
   }
 
   .page__pricing-content {
@@ -306,6 +311,16 @@
     font-size: 16px;
     font-weight: 700;
     color: var(--dark, #010321);
+  }
+
+  .stripe {
+    background-color: var(--light, #f6f6ff);
+    padding: 2em 0;
+    margin: 15em 0;
+  }
+
+  .stripe__text {
+    text-align: center;
   }
 
   .page__about {
