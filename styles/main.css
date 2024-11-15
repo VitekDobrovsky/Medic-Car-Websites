@@ -316,11 +316,28 @@
   .stripe {
     background-color: var(--light, #f6f6ff);
     padding: 2em 0;
-    margin: 15em 0;
+    margin: 10em 0;
+    margin-bottom: 0;
   }
 
   .stripe__text {
     text-align: center;
+  }
+
+  .page__call-taxi {
+    display: grid;
+    place-content: center;
+    text-align: center;
+    height: 700px;
+    background-image: url(./../images/background-light-circle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px 0px;
+  }
+
+  .page__call-taxi-item {
+    margin: 0;
   }
 
   .page__about {
@@ -651,10 +668,6 @@
   }
 
   /* faq */
-
-  .faq {
-    margin-top: 17em;
-  }
 
   .faq--taxi {
     margin-bottom: 17em;
