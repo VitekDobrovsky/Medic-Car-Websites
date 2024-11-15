@@ -80,7 +80,6 @@
   }
 }
 
-
 @layer design {
   /* COMPONENTS */
 
@@ -251,6 +250,54 @@
     gap: 10px;
     padding-top: 32px;
     justify-content: center;
+  }
+
+  .page__pricing {
+    margin-top: 5em;
+  }
+
+  .page__pricing-header {
+    text-align: center;
+  }
+
+  .page__pricing-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 5em;
+    padding: 5em;
+  }
+
+  .page__pricing-wrapper {
+    flex-grow: 1;
+  }
+
+  .page__pricing-image {
+    border-radius: 4px;
+  }
+
+  .page__pricing-price {
+    color: var(--primary, #178bf6);
+    font-size: 16px;
+  }
+
+  .page__pricing-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    justify-content: center;
+  }
+
+  .page__price {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--dark, #010321);
+  }
+
+  .page__pricing-name {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--dark, #010321);
   }
 
   .page__about {
@@ -583,7 +630,11 @@
   /* faq */
 
   .faq {
-    margin-top: 124px;
+    margin-top: 17em;
+  }
+
+  .faq--taxi {
+    margin-bottom: 17em;
   }
 
   .faq__wrapper {
