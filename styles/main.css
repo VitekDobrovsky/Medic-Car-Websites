@@ -420,6 +420,45 @@
     }
   }
 
+  .page__detailing-rezervation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5em;
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 15em;
+    align-items: center;
+  }
+
+  .page__rezervation-text {
+    margin-top: -5em;
+  }
+
+  .page__rezervation-image {
+    border-radius: 4px;
+    margin: 0;
+  }
+
+  .page__detailing-rezervation-option .h4 {
+    margin: 0.5rem 0 1em 0;
+    font-weight: 550;
+  }
+
+  .page__detailing-rezervation-option .btn {
+    margin: 0.5rem auto;
+  }
+
+  .page__detailing-rezervation .h2 {
+    margin-bottom: 2rem;
+  }
+
+  @media (max-width: 745px) {
+    .page__rezervation-image {
+      width: 100%;
+      height: auto;
+    }
+  }
+
   .steps {
     margin: 0 auto;
     display: grid;
@@ -680,6 +719,11 @@
   /* faq */
 
   .faq--taxi {
+    margin-bottom: 10em;
+  }
+
+  .faq--detailing {
+    margin-top: 15em;
     margin-bottom: 10em;
   }
 
@@ -970,6 +1014,8 @@
     box-shadow: #565a7c;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
     transition: 0.2s;
+    display: block;
+    width: fit-content;
   }
   .btn:hover {
     background-color: var(--primary, #178bf6);
