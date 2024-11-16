@@ -21,7 +21,7 @@
                         <div class="bar"></div>
                     </div>
                     <div class="navbar__items" id="navbarItems">
-                        <a class="navbar__item small-paragraph" href="#ceník&služby">Služby & Ceník</a>
+                        <a class="navbar__item small-paragraph" href="#služby">Služby & Ceník</a>
                         <a class="navbar__item small-paragraph" href="#o-nás">Lokace & Otevírací Doba</a>
                         <a class="navbar__item small-paragraph" href="#rezervace">Rezervace</a>
                         <a class="navbar__item small-paragraph" href="#kontakt">Kontakt</a>
@@ -53,11 +53,88 @@
     </section>
 
 
-    <section id="ceník&služby"></section>
+    <section class="page__services--autoservis section" id="služby">
+        <div class="page__services--autoservis-heading">
+            <h3 class="h2">Co Nabízíme?</h3>
+            <p class="paragraph paragraph--services-autoservi">Čištění interiéru i exteriéru vozidel kvalitními
+                prostředky.</p>
+            <p class="small-paragraph page__services--autoservis-dph">*ceny jsou bez dph</p>
+        </div>
+        <div class="page__services--autoservis-wrapper">
+            <div class="card card--autoservis">
+                <h3 class="card__heading">Čistění Interiéru</h3>
+                <p class="price">2500 Kč</p>
+                <div class="card__icon-wrapper"><img class="card__icon card__icon--small"
+                        src="./../images/icons/arrow-in-circle.svg" alt="šipka"></div>
+            </div>
+            <div class="card card--autoservis">
+                <h3 class="card__heading">Čistění Exteriéru</h3>
+                <p class="price">3500 Kč</p>
+                <div class="card__icon-wrapper"><img class="card__icon card__icon--small"
+                        src="./../images/icons/arrow-in-circle.svg" alt="šipka"></div>
+            </div>
+            <div class="card card--autoservis">
+                <h3 class="card__heading">Čistění Exteriéru a Interiéru</h3>
+                <p class="price"></p>
+                <div class="card__icon-wrapper"><img class="card__icon card__icon--small"
+                        src="./../images/icons/arrow-in-circle.svg" alt="šipka"></div>
+            </div>
+        </div>
+    </section>
 
     <section id="rezervace"></section>
 
-    <section id="o-nás"></section>
+    <section class="page__about page__about--detailing" id="o-nás">
+        <div class="page__about-content">
+            <h3 class="h2">Kde a kdy nás najdete?</h3>
+            <div class="icon-text">
+                <img src="./../images/icons/location.svg" alt="lokace Medic Car Ruční mytí vozu">
+                <a class="h3 h3--dark" href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank">
+                    V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1
+                </a>
+            </div>
+            <div class="page__about-wrapper">
+                <div class="page__location-map" id="lokace">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.3447310209526!2d15.162518376948253!3d50.713543368385245!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470934cd8429edb7%3A0x6596bd59ffd2d8e3!2zSmFyb23DrXIgQmxhdG7DrWs!5e0!3m2!1sen!2scz!4v1731757882635!5m2!1sen!2scz"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="opening-hours" id="otevírací-doba">
+                    <h4 class="opening_hours__heading h4">Otevírací Doba</h4>
+                    <div class="opening_hours__day-wrapper">
+                        <p class="opening-hours__day">Podnělí:</p>
+                        <p class="opening-hours__time">8:00 - 17:00</p>
+                    </div>
+                    <div class="opening_hours__day-wrapper">
+                        <p class="opening-hours__day">Úterý:</p>
+                        <p class="opening-hours__time">8:00 - 17:00</p>
+                    </div>
+                    <div class="opening_hours__day-wrapper">
+                        <p class="opening-hours__day">Středa:</p>
+                        <p class="opening-hours__time">8:00 - 17:00</p>
+                    </div>
+                    <div class="opening_hours__day-wrapper">
+                        <p class="opening-hours__day">Čtvrtek:</p>
+                        <p class="opening-hours__time">8:00 - 17:00</p>
+                    </div>
+                    <div class="opening_hours__day-wrapper">
+                        <p class="opening-hours__day">Pátek:</p>
+                        <p class="opening-hours__time">8:00 - 17:00</p>
+                    </div>
+                    <div class="opening_hours__day-wrapper">
+                        <p class="opening-hours__day">Sobota:</p>
+                        <p class="opening-hours__time">9:00 - 12:00</p>
+                    </div>
+                    <div class="opening_hours__day-wrapper">
+                        <p class="opening-hours__day opening-hours__day--closed">Neděle</p>
+                        <p class="opening-hours__time opening-hours__time--closed">zavřeno</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <section class="faq" id="často-kladené-dotazy">
         <div class="faq__wrapper">

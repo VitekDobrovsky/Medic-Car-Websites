@@ -351,6 +351,11 @@
     padding: 5em;
   }
 
+  .page__about--detailing {
+    background-image: url(./../images/detailing/detailing-budova.png);
+    background-position: center;
+  }
+
   .page__about-content {
     background-color: rgba(246, 246, 255, 0.79);
     max-width: 1300px;
