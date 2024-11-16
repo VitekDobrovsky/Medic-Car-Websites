@@ -208,6 +208,10 @@
     background-image: url(../images/taxi/hero-image.png);
   }
 
+  .page__header--detailing {
+    background-image: url(../images/detailing/hero-image.png);
+  }
+
   .page__intro {
     margin-top: 5em;
   }

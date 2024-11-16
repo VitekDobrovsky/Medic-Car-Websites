@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <header class="page__header page__header--taxi">
+    <header class="page__header page__header--detailing">
         <div class="section">
             <nav class="navbar">
                 <div class="navbar__wrapper">
@@ -21,7 +21,9 @@
                         <div class="bar"></div>
                     </div>
                     <div class="navbar__items" id="navbarItems">
-                        <a class="navbar__item small-paragraph" href="#ceník">Ceník</a>
+                        <a class="navbar__item small-paragraph" href="#ceník&služby">Služby & Ceník</a>
+                        <a class="navbar__item small-paragraph" href="#o-nás">Lokace & Otevírací Doba</a>
+                        <a class="navbar__item small-paragraph" href="#rezervace">Rezervace</a>
                         <a class="navbar__item small-paragraph" href="#kontakt">Kontakt</a>
                         <a class="navbar__item small-paragraph" href="#často-kladené-dotazy">FAQ</a>
                     </div>
@@ -29,14 +31,12 @@
             </nav>
             <div class="page__intro page__intro--autoservis" id="intro">
                 <div>
-                    <h1 class="h3">Taxi <strong>Medic Car</strong> Jablonec a Liberec</h1>
-                    <h2 class="h1 h1--intro h1--intro-autoservis">Jeďte kamkoli a kdykoli</h2>
-                    <p class="paragraph paragraph--intro paragraph--intro-autoservis">Taxi Medic Car je vaším
-                        spolehlivým partnerem pro cestování po Jablonci nad Nisou, Liberci a okolí. Nabízíme služby 24/7
-                        s profesionálními řidiči. Ať už potřebujete krátkou jízdu po městě nebo delší cestu mimo region,
-                        zaručujeme pohodlí, spolehlivost a dostupné ceny.
-                        Potřebujete naše služby?</p>
-                    <a href="#rezervace" class="btn">zavolat si taxi</a>
+                    <h1 class="h3">Ruční Mytí <strong>Medic Car</strong></h1>
+                    <h2 class="h1 h1--intro h1--intro-autoservis">Ruční mytí vozu v Jablonci n. N.</h2>
+                    <p class="paragraph paragraph--intro paragraph--intro-autoservis">Profesionální ruční mytí aut přímo
+                        v Jablonci nad Nisou, naproti Gymnáziu U Balvanu. Dopřejte svému vozu špičkovou péči a nový
+                        lesk!</p>
+                    <a href="#rezervace" class="btn">Rezervovat se</a>
                 </div>
             </div>
         </div>
@@ -46,58 +46,20 @@
     <section class="sticky-contact sticky-contact--taxi">
         <div class="icon-text">
             <img src="./../images/icons/location.svg" alt="lokace Medic Car Ruční mytí vozu">
-            <a href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank">
+            <a class="paragraph" href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank">
                 V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1
             </a>
         </div>
     </section>
 
 
-    <section class="page__pricing section" id="ceník">
-        <h3 class="h2 page__pricing-heading">Jezdíme po Jablonci a Liberci!</h3>
-        <p class="paragraph page__pricing-paragraph">Kolik stojí naše taxi po Liberci a Jablonci. n.N.</p>
-        <div class="page__pricing-content">
-            <img class="page__pricing-image" src="./../images/taxi/taxi-mediccar-2.jpg"
-                alt="Taxi Medic Car Jablonec a Liberec" width="597" height="448">
-            <div class="page__pricing-wrapper">
-                <div class="page__price">
-                    <p class="page__pricing-name">Nástupní Sazba:</p>
-                    <p class="page__pricing-price">30 Kč</p>
-                </div>
-                <div class="page__price">
-                    <p class="page__pricing-name">Jízdné:</p>
-                    <p class="page__pricing-price">40 Kč za 1 km</p>
-                </div>
-                <div class="page__price">
-                    <p class="page__pricing-name">Jízdné (nad 35 km):</p>
-                    <p class="page__pricing-price">35 Kč za 1 km</p>
-                </div>
-                <div class="page__price">
-                    <p class="page__pricing-name">Čekání:</p>
-                    <p class="page__pricing-price">7 Kč za 1 min</p>
-                </div>
-                <div class="page__price">
-                    <p class="page__pricing-name">Čekání (trasy nad 35 km):</p>
-                    <p class="page__pricing-price">6 Kč za 1 min</p>
-                </div>
-            </div>
-        </div>
+    <section id="ceník&služby"></section>
 
-    </section>
+    <section id="rezervace"></section>
 
+    <section id="o-nás"></section>
 
-    <section class="stripe">
-        <h4 class="h4 stripe__text">Bereme platby v hotovostí i kartou!</h4>
-    </section>
-
-
-    <div class="page__call-taxi">
-        <p class="h3 page__call-taxi-item">zavolejte si taxi!</p>
-        <h6 class="h2 page__call-taxi-item">+420 608 383 123</h6>
-    </div>
-
-
-    <section class="faq faq--taxi" id="často-kladené-dotazy">
+    <section class="faq" id="často-kladené-dotazy">
         <div class="faq__wrapper">
             <h2 class=" h4 h4--big faq__title">Často kladené dotazy</h2>
             <h3 class="h3">(FAQ)</h3>
@@ -123,7 +85,6 @@
             </div>
         </div>
     </section>
-
 
     <section class="page__contact" id="kontakt">
         <div class="email-form">
