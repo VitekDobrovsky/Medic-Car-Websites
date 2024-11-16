@@ -27,6 +27,7 @@
     background-color: var(--white, #ffffff);
     scroll-behavior: smooth;
     overflow-x: hidden;
+    overscroll-behavior: none;
   }
 
   .navbar::after {
