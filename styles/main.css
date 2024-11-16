@@ -28,6 +28,7 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     overscroll-behavior: none;
+    scroll-padding-top: 100px;
   }
 
   .navbar::after {
