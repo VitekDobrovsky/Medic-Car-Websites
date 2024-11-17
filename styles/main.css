@@ -28,7 +28,7 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     overscroll-behavior: none;
-    scroll-padding-top: 100pxw;
+    scroll-padding-top: 120pxw;
   }
 
   .navbar::after {
@@ -375,7 +375,7 @@
   }
 
   .page__about-content .h2 {
-    margin: 0 0 16px 0;
+    margin: 0;
     text-align: center;
   }
 
@@ -1023,7 +1023,7 @@
   }
   .btn--rounded {
     border-radius: 50px;
-    padding: .8rem 1.2rem;
+    padding: 0.8rem 1.2rem;
   }
 
   .btn:hover {
@@ -1124,14 +1124,15 @@
   .page__cars {
     text-align: center;
     margin-top: 10em;
+    margin-bottom: 15em;
   }
 
   .page__cars .h2 {
     margin-bottom: none;
   }
-  
+
   .page__cars .paragraph {
-    margin-top: .5em;
+    margin-top: 0.5em;
     margin-bottom: 3em;
   }
 
@@ -1157,7 +1158,7 @@
   }
 
   .car:hover .car__btn {
-    padding: .9rem 1rem;
+    padding: 0.9rem 1rem;
   }
 
   .car__btn {
@@ -1171,7 +1172,6 @@
   .car__info {
     margin: 0;
     text-align: left;
-    
   }
 
   .car--skodovka-III-1 {
