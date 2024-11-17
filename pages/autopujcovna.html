@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/main.css">
+    <script src="./../scripts/main.js" defer></script>
+    <title>Ruční Mytí Vozu | Medic Car</title>
+</head>
+
+<!-- 
+TODO:
+. make service cards clickable
+. rezervation
+-->
+
+<body>
+    <header class="page__header page__header--pujcovna">
+        <div class="section">
+            <nav class="navbar">
+                <div class="navbar__wrapper">
+                    <a href="./../index.html">
+                        <img src="./../images/logo/medic-car-logo.svg" alt="Medic Car Logo" class="navbar__logo">
+                    </a>
+                    <div class="navbar__hamburger" id="hamburger">
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                        <div class="bar"></div>
+                    </div>
+                    <div class="navbar__items" id="navbarItems">
+                        <a class="navbar__item small-paragraph" href="#nabídka">Nabídka</a>
+                        <a class="navbar__item small-paragraph" href="#často-kladené-dotazy">FAQ</a>
+                        <a class="navbar__item small-paragraph" href="#postup">Jak to funguje?</a>
+                        <a class="navbar__item small-paragraph" href="#kontakt">Kontakt</a>
+                    </div>
+                </div>
+            </nav>
+            <div class="page__intro page__intro--autoservis" id="intro">
+                <div>
+                    <h1 class="h3">Autopůjčovna <strong>Medic Car</strong></h1>
+                    <h2 class="h1 h1--intro h1--intro-autoservis">Půjče si auto bez omezení km</h2>
+                    <p class="paragraph paragraph--intro paragraph--intro-autoservis">Vyberte si z naší nabídky osobních
+                        vozů. Užijte si flexibilitu a komfort, bez skrytých
+                        poplatků a omezení počtu najetých kilometrů.</p>
+                    <a href="#nabídka" class="btn">Zobrazit nabídku</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="sticky-contact sticky-contact--taxi">
+        <div class="icon-text">
+            <img src="./../images/icons/location.svg" alt="lokace Medic Car Ruční mytí vozu">
+            <a class="paragraph" href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank">
+                V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1
+            </a>
+        </div>
+    </section>
+
+    <section class="section page__cars" id="nabídka">
+        <h3 class="h2">Co si u nás můžete půjčit?</h3>
+        <p class="paragraph">Vyberte si z nabídky vozů a zarezervujte si ho online!</p>
+        <div class="page__cars-wrapper">
+            <div class="car car--1">
+                <div class="car__info">
+                    <div class="icon-text">
+                        <img src="./../images/icons/person.svg" alt="počet osob">
+                        <a class="car__size">4 + 1 osob</a>
+                    </div>
+                    <h6 class="car__name h3">Škoda Octavia IV</h6>
+                    <p class="car__price">1000 Kč/den</p>
+                </div>
+
+                <a href="" class="btn btn--rounded car__btn">&#8594;</a>
+            </div>
+            <div class="car car--1">
+                <div class="car__info">
+                    <div class="icon-text">
+                        <img src="./../images/icons/person.svg" alt="počet osob">
+                        <a class="car__size">4 + 1 osob</a>
+                    </div>
+                    <h6 class="car__name h3">Škoda Octavia IV</h6>
+                    <p class="car__price">1000 Kč/den</p>
+                </div>
+
+                <a href="" class="btn btn--rounded car__btn">&#8594;</a>
+            </div>
+            <div class="car car--1">
+                <div class="car__info">
+                    <div class="icon-text">
+                        <img src="./../images/icons/person.svg" alt="počet osob">
+                        <a class="car__size">4 + 1 osob</a>
+                    </div>
+                    <h6 class="car__name h3">Škoda Octavia IV</h6>
+                    <p class="car__price">1000 Kč/den</p>
+                </div>
+
+                <a href="" class="btn btn--rounded car__btn">&#8594;</a>
+            </div>
+            <div class="car car--1">
+                <div class="car__info">
+                    <div class="icon-text">
+                        <img src="./../images/icons/person.svg" alt="počet osob">
+                        <a class="car__size">4 + 1 osob</a>
+                    </div>
+                    <h6 class="car__name h3">Škoda Octavia IV</h6>
+                    <p class="car__price">1000 Kč/den</p>
+                </div>
+
+                <a href="" class="btn btn--rounded car__btn">&#8594;</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="faq faq--detailing" id="často-kladené-dotazy">
+        <div class="faq__wrapper">
+            <h2 class=" h4 h4--big faq__title">Často kladené dotazy</h2>
+            <h3 class="h3">(FAQ)</h3>
+
+            <div class="faq__item">
+                <button class="faq__question paragraph paragraph--dark">Jak dlouho trvá ruční mytí vozu?</button>
+                <p class="faq__answer">Ruční mytí vozu obvykle trvá přibližně 1 až 2 hodiny v závislosti na velikosti a
+                    stavu vozidla.</p>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__question paragraph paragraph--dark">Musím si předem rezervovat termín?</button>
+                <p class="faq__answer">Ano, doporučujeme si předem rezervovat termín, abychom vám mohli zajistit co
+                    nejlepší služby.</p>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__question paragraph paragraph--dark">Jaké prostředky používáte na čištění?</button>
+                <p class="faq__answer">Používáme pouze kvalitní a šetrné prostředky, které jsou bezpečné pro váš vůz i
+                    životní prostředí.</p>
+            </div>
+
+            <div class="faq__item">
+                <button class="faq__question paragraph paragraph--dark">Mohu platit kartou?</button>
+                <p class="faq__answer">Ano, přijímáme platby v hotovosti i kartou.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="page__contact" id="kontakt">
+        <div class="email-form">
+            <h4 class="h4">Pošlete nám mail!</h4>
+            <form id="contactForm">
+                <label for="name">Jméno:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="subject">Předmět:</label>
+                <input type="text" id="subject" name="subject" required>
+
+                <label for="message">Obsah:</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <a class="btn" onclick="submitForm()">Odeslat</a>
+            </form>
+            <p id="statusMessage"></p>
+        </div>
+        <div class="page__contact-row2">
+            <h4 class="h4">Máte dotaz nebo zájem o spolupráci?</h4>
+            <p class="paragraph">Pošlete nám mail na info@medic-car.cz, nebo vyplňte formulář!</p>
+            <img class="page__contact-image" src="./../images/autopujcovna/auto-na-pujceni.jpg"
+                alt="Ruční Mytí Votu Medic Car Jablonec n.N." width="647" height="486" loading="lazy">
+
+        </div>
+    </section>
+
+    <footer class="footer footer--autoservis">
+        <div class="footer__wrapper section">
+            <div class="footer__logo-wrapper">
+                <a href="./../index.html">
+                    <img height="100" loading="lazy" src="./../images/logo/medic-car-logo-big.svg" alt="Medic Car Logo">
+                </a>
+            </div>
+            <div class="footer__page-content">
+                <h5>Obsah</h5>
+                <ul>
+                    <li><a href="./../index.html">Úvod</a></li>
+                    <li><a href="./../pages/taxi.html">Taxi Služby</a></li>
+                    <li><a href="./../pages/autoservis.html">Auto & Pneu Servis</a></li>
+                    <li><a href="./../pages/autopujcovna.html">Autopůjčovna</a></li>
+                    <li><a href="./../pages/rucnimyti.html">Ruční Mytí Vozu</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__contact">
+                <h5>Kontakt</h5>
+                <div class="footer__contact-wrapper">
+                    <div class="footer__contact-row-1">
+                        <h6>Medic Car s.r.o.</h6>
+                        <div class="icon-text">
+                            <img src="./../images/icons/envelope.svg" alt="emailová adresa Medic Car">
+                            <a href="mailto:info@medic-car.cz">info@medic-car.cz</a>
+                        </div>
+                        <div class="icon-text">
+                            <img src="./../images/icons/phone.svg" alt="telefonní číslo Medic Car">
+                            <a href="tel:+420776156123">+420 776 156 123</a>
+                        </div>
+                        <div class="icon-text">
+                            <img src="./../images/icons/location.svg" alt="lokace Medic Car">
+                            <a href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank">
+                                V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1
+                            </a>
+                        </div>
+                        <div class="icon-text">
+                            <img src="./../images/icons/tag.svg" alt="ičo Medic Car">
+                            <a href="https://rejstrik-firem.kurzy.cz/21103399/autopneuservis-medic-car-sro/"
+                                target="_blank">
+                                Ičo: <span id="ičo">21103399</span>
+                            </a>
+                        </div>
+                        <p>*jsme plátci DPH</p>
+                    </div>
+                    <div class="footer__contact-row-2">
+                        <h6>Auto & Pneu Servis</h6>
+                        <div class="icon-text">
+                            <img src="./../images/icons/phone.svg" alt="telefonní číslo Medic Car Autoservis">
+                            <a href="tel:+420776156123">+420 776 156 123</a>
+                        </div>
+                        <div class="icon-text">
+                            <img src="./../images/icons/location.svg" alt="lokace Medic Car Autoservis">
+                            <a href="https://maps.app.goo.gl/rv3igEpUsviDKyQMA" target="_blank">
+                                Pražská 2179/23b, 466 01 Jablonec nad Nisou 1
+                            </a>
+                        </div>
+                        <h6>Taxi Služby</h6>
+                        <div class="icon-text">
+                            <img src="./../images/icons/phone.svg" alt="telefonní číslo Medic Car Taxi služby">
+                            <a href="tel:+420608383123">+420 608 383 123</a>
+                        </div>
+                        <div class="icon-text">
+                            <img src="./../images/icons/location.svg" alt="lokace Medic Car Autopůjčovna">
+                            <a>Jablonec a Liberec</a>
+                        </div>
+                    </div>
+                    <div class="footer__contact-row-3">
+                        <h6>Autopůjčovna</h6>
+                        <div class="icon-text">
+                            <img src="./../images/icons/phone.svg" alt="telefonní číslo Medic Car Autopůjčovna">
+                            <a href="tel:+420776156123">+420 776 156 123</a>
+                        </div>
+                        <div class="icon-text">
+                            <img src="./../images/icons/location.svg" alt="lokace Medic Car Autopůjčovna">
+                            <a href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank">
+                                V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1
+                            </a>
+                        </div>
+                        <h6>Ruční Mytí Vozu</h6>
+                        <div class="icon-text">
+                            <img src="./../images/icons/phone.svg" alt="telefonní číslo Medic Car Ruční mytí vozu">
+                            <a href="tel:+420776156123">+420 776 156 123</a>
+                        </div>
+                        <div class="icon-text">
+                            <img src="./../images/icons/location.svg" alt="lokace Medic Car Ruční mytí vozu">
+                            <a href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank">
+                                V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p id="copywrite">&copy; 2024 Medic Car s.r.o. - All Rights Reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -28,7 +28,7 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     overscroll-behavior: none;
-    scroll-padding-top: 100px;
+    scroll-padding-top: 100pxw;
   }
 
   .navbar::after {
@@ -199,11 +199,15 @@
     background-image: url(../images/main-page/hero-image.png);
   }
   .page__header--autoservis {
-    background-image: url(../images/autoservis/hero-image.png);
-    height: 900px;
+    background-image: url(../images/autoservis/hero-image.webp);
+    height: 850px;
   }
   .page__intro--autoservis {
     margin-top: 50px;
+  }
+
+  .page__header--pujcovna {
+    background-image: url(../images/autopujcovna/hero-image.jpg);
   }
 
   .page__header--taxi {
@@ -221,7 +225,6 @@
   /* partners */
   .page__partners {
     background-color: var(--light, #f6f6ff);
-    margin-top: -100px;
   }
   .page__partners-wrapper {
     padding: 2em 0;
@@ -1018,6 +1021,11 @@
     display: block;
     width: fit-content;
   }
+  .btn--rounded {
+    border-radius: 50px;
+    padding: .8rem 1.2rem;
+  }
+
   .btn:hover {
     background-color: var(--primary, #178bf6);
   }
@@ -1111,6 +1119,83 @@
 
   .card--autoservis:hover .card__icon--small {
     transform: translate(-5%, -20%);
+  }
+
+  .page__cars {
+    text-align: center;
+    margin-top: 10em;
+  }
+
+  .page__cars .h2 {
+    margin-bottom: none;
+  }
+  
+  .page__cars .paragraph {
+    margin-top: .5em;
+    margin-bottom: 3em;
+  }
+
+  .page__cars-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+  }
+
+  .car {
+    width: 320px;
+    height: 400px;
+    transition: all 0.2s ease-out;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 1em;
+    border-radius: 1px;
+    background-position: top;
+    gap: 8px;
+  }
+
+  .car:hover .car__btn {
+    padding: .9rem 1rem;
+  }
+
+  .car__btn {
+    font-size: 1.2rem;
+  }
+
+  .car:hover {
+    transform: scale(1.004);
+  }
+
+  .car__info {
+    margin: 0;
+    text-align: left;
+    
+  }
+
+  .car--1 {
+    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg);
+    background-size: cover;
+  }
+  .car--1:hover {
+    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-IV--light.jpg);
+  }
+
+  .car__size,
+  .car__name,
+  .car__price {
+    color: var(--white, white);
+  }
+
+  .car__info .icon-text {
+    margin-bottom: 8px;
+  }
+
+  .car__price {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 650;
+    font-family: "Montserrat", sans-serif;
   }
 
   .opening_hours__day-wrapper {
