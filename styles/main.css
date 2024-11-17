@@ -1153,6 +1153,7 @@
     border-radius: 1px;
     background-position: top;
     gap: 8px;
+    background-size: cover;
   }
 
   .car:hover .car__btn {
@@ -1173,12 +1174,32 @@
     
   }
 
-  .car--1 {
+  .car--skodovka-III-1 {
     background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg);
-    background-size: cover;
   }
-  .car--1:hover {
+  .car--skodovka-III-1:hover {
     background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-IV--light.jpg);
+  }
+
+  .car--skodovka-IV {
+    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg);
+  }
+  .car--skodovka-IV:hover {
+    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III--light.jpg);
+  }
+
+  .car--skodovka-III-2 {
+    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg);
+  }
+  .car--skodovka-III-2:hover {
+    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III-2--light.jpg);
+  }
+
+  .car--transporter {
+    background-image: url(./../images/autopujcovna/nabidka/wv-transporter.jpg);
+  }
+  .car--transporter:hover {
+    background-image: url(./../images/autopujcovna/nabidka/wv-transporter--light.jpg);
   }
 
   .car__size,
