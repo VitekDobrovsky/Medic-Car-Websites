@@ -113,6 +113,7 @@
   .navbar__logo {
     width: 107px;
     height: 50px;
+    user-select: none;
   }
   .navbar__hamburger {
     display: none;
@@ -1339,6 +1340,10 @@
   .footer__logo-wrapper {
     display: grid;
     place-items: center;
+  }
+
+  .footer__logo-wrapper img {
+    user-select: none;
   }
 
   .footer ul {
