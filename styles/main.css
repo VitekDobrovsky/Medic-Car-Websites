@@ -28,7 +28,11 @@
     scroll-behavior: smooth;
     overflow-x: hidden;
     overscroll-behavior: none;
-    scroll-padding-top: 120pxw;
+    scroll-padding-top: 100px;
+  }
+
+  .page {
+    overflow-x: hidden;
   }
 
   .navbar::after {
@@ -56,16 +60,6 @@
     width: 80%;
     background-color: var(--gray, #565a7c);
     margin-bottom: 2px;
-  }
-  .faq {
-    position: relative;
-  }
-  .faq::after {
-    content: url("./../images/backgroun-light-stripe.png");
-    display: block;
-    position: absolute;
-    top: -700px;
-    z-index: -2;
   }
 
   .steps_step {
@@ -114,6 +108,7 @@
     width: 107px;
     height: 50px;
     user-select: none;
+    -webkit-user-drag: none;
   }
   .navbar__hamburger {
     display: none;
@@ -242,7 +237,7 @@
     grid-template-columns: repeat(4, 1fr);
     margin: 0 auto;
     row-gap: 8em;
-    column-gap: 3em;
+    column-gap: 2em;
     padding: 0 2em;
   }
   .page__services--autoservis {
@@ -397,17 +392,12 @@
   }
 
   .page__rezervation {
-    position: relative;
     height: 1000px;
     margin-top: 430px;
     padding: 3em 1em;
   }
-
-  .page__rezervation img {
-    position: absolute;
-    right: -10%;
-    top: 0;
-    z-index: -4;
+  .page__rezervation .steps {
+    place-content: center;
   }
 
   .page__rezervation .h2,
@@ -415,15 +405,6 @@
     text-align: center;
   }
 
-  @media (max-width: 1415px) {
-    .page__rezervation img {
-      display: none;
-    }
-
-    .page__rezervation .steps {
-      place-content: center;
-    }
-  }
 
   .page__detailing-rezervation {
     display: flex;
@@ -514,7 +495,7 @@
   }
 
   .page__booking {
-    width: 400px;
+    width: 800px;
     height: 600px;
     background-color: #555;
     margin-top: 24px;
@@ -568,7 +549,7 @@
     }
   }
 
-  @media (max-width: 875px) {
+  @media (max-width: 1000px) {
     .page__services {
       grid-template-columns: repeat(2, 1fr);
     }
@@ -837,6 +818,8 @@
   .icon-text img {
     margin-right: 0.3em;
     height: 1em;
+    user-select: none;
+    -webkit-user-drag: none;
   }
   .icon-text a {
     text-decoration: none;
@@ -1063,6 +1046,8 @@
   .card__icon {
     width: 60px;
     transition: 0.3s;
+    user-select: none;
+    -webkit-user-drag: none;
   }
   .card:hover {
     transform: scale(1.01);
@@ -1344,6 +1329,7 @@
 
   .footer__logo-wrapper img {
     user-select: none;
+    -webkit-user-drag: none;
   }
 
   .footer ul {
