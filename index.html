@@ -16,11 +16,10 @@
 <!--
 todo
 fix errors:
-. safari compatibility
 . optimize images - size + formats
 . seo
 . email form
-. gramatika
+. webmanifest
 -->
 
 <body class="page">
@@ -30,7 +29,11 @@ fix errors:
             <nav class="navbar">
                 <div class="navbar__wrapper">
                     <a href="index.html">
-                        <img src="./images/logo/medic-car-logo.svg" alt="Medic Car Logo" class="navbar__logo">
+                        <picture>
+                            <source srcset="./images/logo/medic-car-logo.svg" type="image/svg+xml">
+                            <img src="./images/logo/medic-car-logo.png" alt="Medic Car Logo" class="navbar__logo"
+                                height="50">
+                        </picture>
                     </a>
                     <div class="navbar__items navbar__items--home">
                         <div class="icon-text navbar__item">
@@ -50,7 +53,8 @@ fix errors:
                     <h1 class="h3">My jsme <strong>Medic Car</strong> a</h1>
                     <h2 class="h1 h1--intro">Staráme se o vás i o vaše auto</h2>
                     <p class="paragraph paragraph--intro">Nabízíme široké spektrum služeb. Můžete se u nás svézt
-                        taxíkem, nechat si své auto opravit nebo přezout pneumatiky. Pokud potřebujete umýt auto, my vám ho ručně vyblýskáme. Provozujeme také autopůjčovnu,
+                        taxíkem, nechat si své auto opravit nebo přezout pneumatiky. Pokud potřebujete umýt auto, my vám
+                        ho ručně vyblýskáme. Provozujeme také autopůjčovnu,
                         ve sbírce
                         máme 7 aut, které si můžete vypůjčit.</p>
                     <a href="#služby" class="btn">co nabízíme?</a>
@@ -86,7 +90,10 @@ fix errors:
         <div class="footer__wrapper">
             <div class="footer__logo-wrapper">
                 <a href="index.html">
-                    <img height="100" loading="lazy" src="./images/logo/medic-car-logo-big.svg" alt="Medic Car Logo">
+                    <picture>
+                        <source srcset="./images/logo/medic-car-logo-big.svg" type="image/svg+xml">
+                        <img height="100" loading="lazy" src="./images/logo/medic-car-logo-big.png" alt="Medic Car Logo">
+                    </picture>
                 </a>
             </div>
             <div class="footer__page-content">

@@ -192,10 +192,16 @@
     background-position: left;
   }
   .page__header--home {
-    background-image: url(../images/main-page/hero-image.png);
+    background-image: image-set(
+      url(./../images/hlavni-strana/header-image.webp) type("image/webp"),
+      url(./../images/hlavni-strana/header-image.jpg) type("image/jpg")
+    );
   }
   .page__header--autoservis {
-    background-image: url(../images/autoservis/hero-image.webp);
+    background-image: image-set(
+      url(./../images/autoservis/header-image.webp) type("image/webp"),
+      url(./../images/autoservis/header-image.jpg) type("image/jpg")
+    );
     height: 850px;
   }
   .page__intro--autoservis {
@@ -203,15 +209,24 @@
   }
 
   .page__header--pujcovna {
-    background-image: url(../images/autopujcovna/hero-image.jpg);
+    background-image: image-set(
+      url(./../images/autopujcovna/header-image.webp) type("image/webp"),
+      url(./../images/autopujcovna/header-image.jpg) type("image/jpg")
+    );
   }
 
   .page__header--taxi {
-    background-image: url(../images/taxi/hero-image.png);
+    background-image: image-set(
+      url(./../images/taxi/header-image.webp) type("image/webp"),
+      url(./../images/taxi/header-image.jpg) type("image/jpg")
+    );
   }
 
   .page__header--detailing {
-    background-image: url(../images/detailing/hero-image.png);
+    background-image: image-set(
+      url(./../images/rucni-myti/header-image.webp) type("image/webp"),
+      url(./../images/rucni-myti/header-image.jpg) type("image/jpg")
+    );
   }
 
   .page__intro {
@@ -229,6 +244,11 @@
     gap: 24px;
     flex-wrap: wrap;
     margin: 0 auto;
+  }
+
+  .partner {
+    user-select: none;
+    -webkit-user-drag: none;
   }
 
   /* services */
@@ -346,14 +366,20 @@
   }
 
   .page__about {
-    background-image: url(./../images/autoservis/background1.png);
+    background-image: image-set(
+      url(./../images/autoservis/budova.webp) type("image/webp"),
+      url(./../images/autoservis/budova.jpg) type("image/jpg")
+    );
     background-size: cover;
     background-position: left;
     padding: 5em;
   }
 
   .page__about--detailing {
-    background-image: url(./../images/detailing/detailing-budova.png);
+    background-image: image-set(
+      url(./../images/rucni-myti/budova.webp) type("image/webp"),
+      url(./../images/rucni-myti/budova.jpg) type("image/jpg")
+    );
     background-position: center;
   }
 
@@ -404,7 +430,6 @@
   .page__rezervation .paragraph {
     text-align: center;
   }
-
 
   .page__detailing-rezervation {
     display: flex;
