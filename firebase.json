@@ -5,6 +5,22 @@
       {
         "source": "/",
         "destination": "/index.html"
+      },
+      {
+        "source": "/taxi",
+        "destination": "/pages/taxi.html"
+      },
+      {
+        "source": "/autopujcovna",
+        "destination": "/pages/autopujcovna.html"
+      },
+      {
+        "source": "/autoservis",
+        "destination": "/pages/autoservis.html"
+      },
+      {
+        "source": "/rucni-myti",
+        "destination": "/pages/rucnimyti.html"
       }
     ],
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
