@@ -41,7 +41,6 @@
     --secondary: #2a8b00;
     --light: #f0f7f1;
     --gray-hover: rgb(94, 134, 94);
-
   }
 
   .navbar::after {
@@ -555,7 +554,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 5em;
+    gap: 10em;
     padding: 12em 2em 10em 2em;
   }
 
@@ -872,15 +871,19 @@
 
   .email-form {
     padding: 2em;
-    background: rgb(205, 219, 230);
+    background: rgb(214, 228, 239);
+
+    width: 400px;
+    height: 550px;
+    border-radius: 4px;
+  }
+
+  .email-form--green {
     background: linear-gradient(
       180deg,
       rgb(212, 235, 216) 0%,
       rgb(225, 240, 227) 100%
     );
-    width: 400px;
-    height: 550px;
-    border-radius: 4px;
   }
 
   #contactForm {
