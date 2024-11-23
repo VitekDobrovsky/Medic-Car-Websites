@@ -881,7 +881,7 @@
     display: flex;
     text-align: center;
     align-items: center;
-    margin: 3em;
+    margin: 5em;
   }
 
   .email-sent p {
@@ -934,19 +934,21 @@
     border-radius: 4px;
   }
 
-  .validation-message {
-    color: red;
-    font-size: 12px;
-    margin-top: 4px;
-  }
-
   /* typography */
   a {
     text-decoration: none;
     color: var(--secondary, #0038ff);
   }
 
+  .validation-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 0.5em;
+  }
+
+
   .h1 {
+    font-size: 70px;
     font-family: "Montserrat", sans-serif;
     line-height: 81px;
     letter-spacing: -1px;
