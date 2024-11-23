@@ -35,6 +35,15 @@
     overflow-x: hidden;
   }
 
+  .page--green {
+    --primary: #7ed259;
+    --dark-blue: #78bf59;
+    --secondary: #2a8b00;
+    --light: #f0f7f1;
+    --gray-hover: rgb(94, 134, 94);
+
+  }
+
   .navbar::after {
     content: "";
     display: block;
@@ -396,6 +405,10 @@
     gap: 12px;
   }
 
+  .page__about-content--green {
+    background-color: rgba(241, 245, 240, 0.79);
+  }
+
   .page__about-content .h2 {
     margin: 0;
     text-align: center;
@@ -532,7 +545,10 @@
   }
 
   .page__contact {
-    background-image: url("./../images/contact-bacground.png");
+    background-image: image-set(
+      url(./../images/contact-bacground.svg) type("image/svg+xml"),
+      url(./../images/contact-bacground.png) type("image/png")
+    );
     background-position: top;
     background-size: cover;
     display: flex;
@@ -543,6 +559,9 @@
     padding: 12em 2em 10em 2em;
   }
 
+  .page__contact--green {
+    background-image: url(./../images/contact-bacground--green.svg);
+  }
   .page__contact-image {
     border-radius: 4px;
   }
@@ -840,7 +859,8 @@
     display: flex;
     align-items: center;
   }
-  .icon-text img {
+  .icon-text img,
+  svg {
     margin-right: 0.3em;
     height: 1em;
     user-select: none;
@@ -855,8 +875,8 @@
     background: rgb(205, 219, 230);
     background: linear-gradient(
       180deg,
-      rgba(205, 219, 230, 1) 0%,
-      rgba(215, 221, 241, 1) 100%
+      rgb(212, 235, 216) 0%,
+      rgb(225, 240, 227) 100%
     );
     width: 400px;
     height: 550px;
@@ -1525,5 +1545,32 @@
       opacity: 0;
       transform: translateX(-100%);
     }
+  }
+
+  .page__404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background-color: var(--light, #f6f6ff);
+  }
+
+  .page__404 .h1 {
+    font-size: 72px;
+    color: var(--primary, #178bf6);
+    margin-bottom: 16px;
+  }
+
+  .page__404 .paragraph {
+    font-size: 24px;
+    color: var(--gray, #565a7c);
+    margin-bottom: 32px;
+  }
+
+  .page__404 .btn {
+    padding: 1em 2em;
+    font-size: 18px;
   }
 }
