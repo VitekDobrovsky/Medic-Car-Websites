@@ -16,7 +16,8 @@
     <link rel="manifest" href="./../manifest.webmanifest">
     <meta name="description"
         content="Ruční mytí vozu v Jablonci nad Nisou. Profesionální péče o váš vůz. Čištění interiéru i exteriéru vozidel.">
-    <meta name="keywords" content="Ruční Mytí Vozu, Medic Car, Jablonec nad Nisou, Čištění Interiéru, Čištění Exteriéru">
+    <meta name="keywords"
+        content="Ruční Mytí Vozu, Medic Car, Jablonec nad Nisou, Čištění Interiéru, Čištění Exteriéru">
     <meta name="author" content="Medic Car">
     <title>Ruční Mytí Vozu | Medic Car - Jablonec nad Nisou</title>
 </head>
@@ -25,26 +26,29 @@
 <body class="page">
     <header class="page__header page__header--detailing">
         <div class="section">
-            <nav class="navbar">
+            <nav class="navbar" aria-label="Hlavní navigace">
                 <div class="navbar__wrapper">
-                    <a href="./../index.html">
+                    <a href="./../index.html" aria-label="Domů">
                         <picture>
                             <source srcset="./../images/logo/medic-car-logo.svg" type="image/svg+xml">
-                            <img src="./../images/logo/medic-car-logo.png" alt="Medic Car Logo" class="navbar__logo"
+                            <img src="./../images/logo/medic-car-logo.png" alt="Logo Medic Car" class="navbar__logo"
                                 height="50">
                         </picture>
                     </a>
-                    <div class="navbar__hamburger" id="hamburger">
+                    <div class="navbar__hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
                         <div class="bar"></div>
                         <div class="bar"></div>
                         <div class="bar"></div>
                     </div>
                     <div class="navbar__items" id="navbarItems">
-                        <a class="navbar__item small-paragraph" href="#služby">Služby & Ceník</a>
-                        <a class="navbar__item small-paragraph" href="#rezervace">Rezervace</a>
-                        <a class="navbar__item small-paragraph" href="#o-nás">Lokace & Otevírací Doba</a>
-                        <a class="navbar__item small-paragraph" href="#často-kladené-dotazy">FAQ</a>
-                        <a class="navbar__item small-paragraph" href="#kontakt">Kontakt</a>
+                        <a class="navbar__item small-paragraph" href="#služby" aria-label="Služby a Ceník">Služby &
+                            Ceník</a>
+                        <a class="navbar__item small-paragraph" href="#rezervace" aria-label="Rezervace">Rezervace</a>
+                        <a class="navbar__item small-paragraph" href="#o-nás"
+                            aria-label="Lokace a Otevírací Doba">Lokace & Otevírací Doba</a>
+                        <a class="navbar__item small-paragraph" href="#často-kladené-dotazy"
+                            aria-label="Často kladené dotazy">FAQ</a>
+                        <a class="navbar__item small-paragraph" href="#kontakt" aria-label="Kontakt">Kontakt</a>
                     </div>
                 </div>
             </nav>
@@ -64,8 +68,9 @@
 
     <div class="sticky-contact sticky-contact--taxi">
         <div class="icon-text">
-            <img src="./../images/icons/location.svg" alt="lokace Medic Car Ruční mytí vozu">
-            <a class="paragraph" href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank">
+            <img src="./../images/icons/location.svg" alt="Ikona lokace">
+            <a class="paragraph" href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank"
+                aria-label="Lokace na Google Maps">
                 V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1
             </a>
         </div>
@@ -111,7 +116,7 @@
                 </div>
                 <div class="page__detailing-rezervation-option">
                     <p class="h3">nebo využitím naší</p>
-                    <a href="" class="btn">Online Rezervace</a>
+                    <a href="" class="btn" aria-label="Online Rezervace">Online Rezervace</a>
                 </div>
             </div>
 
@@ -129,7 +134,8 @@
             <h3 class="h2">Kde a kdy nás najdete?</h3>
             <div class="icon-text">
                 <img src="./../images/icons/location.svg" alt="lokace Medic Car Ruční mytí vozu">
-                <a class="h3 h3--dark" href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank">
+                <a class="h3 h3--dark" href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank"
+                    aria-label="Lokace na Google Maps">
                     V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1
                 </a>
             </div>
@@ -181,12 +187,6 @@
             <h3 class="h3">(FAQ)</h3>
 
             <div class="faq__item">
-                <button class="faq__question paragraph paragraph--dark">Jak dlouho trvá ruční mytí vozu?</button>
-                <p class="faq__answer">Ruční mytí vozu obvykle trvá přibližně 1 až 2 hodiny v závislosti na velikosti a
-                    stavu vozidla.</p>
-            </div>
-
-            <div class="faq__item">
                 <button class="faq__question paragraph paragraph--dark">Musím si předem rezervovat termín?</button>
                 <p class="faq__answer">Ano, doporučujeme si předem rezervovat termín, abychom vám mohli zajistit co
                     nejlepší služby.</p>
@@ -210,18 +210,18 @@
             <h4 class="h4">Pošlete nám mail!</h4>
             <form id="contactForm">
                 <label for="name">Jméno:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required aria-required="true">
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required aria-required="true">
 
                 <label for="subject">Předmět:</label>
-                <input type="text" id="subject" name="subject" required>
+                <input type="text" id="subject" name="subject" required aria-required="true">
 
                 <label for="message">Obsah:</label>
-                <textarea id="message" name="message" required></textarea>
+                <textarea id="message" name="message" required aria-required="true"></textarea>
 
-                <a class="btn" onclick="submitForm()">Odeslat</a>
+                <a class="btn" onclick="submitForm()" aria-label="Odeslat Email">Odeslat</a>
             </form>
             <p id="statusMessage"></p>
         </div>
@@ -267,22 +267,23 @@
                         <h6>Medic Car s.r.o.</h6>
                         <div class="icon-text">
                             <img src="./../images/icons/envelope.svg" alt="emailová adresa Medic Car">
-                            <a href="mailto:info@medic-car.cz">info@medic-car.cz</a>
+                            <a href="mailto:info@medic-car.cz" aria-label="Odeslat email">info@medic-car.cz</a>
                         </div>
                         <div class="icon-text">
                             <img src="./../images/icons/phone.svg" alt="telefonní číslo Medic Car">
-                            <a href="tel:+420776156123">+420 776 156 123</a>
+                            <a href="tel:+420776156123" aria-label="Zavolat">+420 776 156 123</a>
                         </div>
                         <div class="icon-text">
                             <img src="./../images/icons/location.svg" alt="lokace Medic Car">
-                            <a href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank">
+                            <a href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank"
+                                aria-label="Lokace na Google Maps">
                                 V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1
                             </a>
                         </div>
                         <div class="icon-text">
                             <img src="./../images/icons/tag.svg" alt="ičo Medic Car">
                             <a href="https://rejstrik-firem.kurzy.cz/21103399/autopneuservis-medic-car-sro/"
-                                target="_blank">
+                                target="_blank" aria-label="Ičo">
                                 Ičo: <span id="ičo">21103399</span>
                             </a>
                         </div>
@@ -292,44 +293,47 @@
                         <h6>Auto & Pneu Servis</h6>
                         <div class="icon-text">
                             <img src="./../images/icons/phone.svg" alt="telefonní číslo Medic Car Autoservis">
-                            <a href="tel:+420776156123">+420 776 156 123</a>
+                            <a href="tel:+420776156123" aria-label="Zavolat Autoservis">+420 776 156 123</a>
                         </div>
                         <div class="icon-text">
                             <img src="./../images/icons/location.svg" alt="lokace Medic Car Autoservis">
-                            <a href="https://maps.app.goo.gl/rv3igEpUsviDKyQMA" target="_blank">
+                            <a href="https://maps.app.goo.gl/rv3igEpUsviDKyQMA" target="_blank"
+                                aria-label="Lokace Autoservis">
                                 Pražská 2179/23b, 466 01 Jablonec nad Nisou 1
                             </a>
                         </div>
                         <h6>Taxi Služby</h6>
                         <div class="icon-text">
                             <img src="./../images/icons/phone.svg" alt="telefonní číslo Medic Car Taxi služby">
-                            <a href="tel:+420608383123">+420 608 383 123</a>
+                            <a href="tel:+420608383123" aria-label="Zavolat Taxi služby">+420 608 383 123</a>
                         </div>
                         <div class="icon-text">
                             <img src="./../images/icons/location.svg" alt="lokace Medic Car Autopůjčovna">
-                            <a>Jablonec a Liberec</a>
+                            <a aria-label="Lokace Autopůjčovna">Jablonec a Liberec</a>
                         </div>
                     </div>
                     <div class="footer__contact-row-3">
                         <h6>Autopůjčovna</h6>
                         <div class="icon-text">
                             <img src="./../images/icons/phone.svg" alt="telefonní číslo Medic Car Autopůjčovna">
-                            <a href="tel:+420776156123">+420 776 156 123</a>
+                            <a href="tel:+420776156123" aria-label="Zavolat Autopůjčovna">+420 776 156 123</a>
                         </div>
                         <div class="icon-text">
                             <img src="./../images/icons/location.svg" alt="lokace Medic Car Autopůjčovna">
-                            <a href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank">
+                            <a href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank"
+                                aria-label="Lokace Autopůjčovna">
                                 V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1
                             </a>
                         </div>
                         <h6>Ruční Mytí Vozu</h6>
                         <div class="icon-text">
                             <img src="./../images/icons/phone.svg" alt="telefonní číslo Medic Car Ruční mytí vozu">
-                            <a href="tel:+420776156123">+420 776 156 123</a>
+                            <a href="tel:+420776156123" aria-label="Zavolat Ruční mytí vozu">+420 776 156 123</a>
                         </div>
                         <div class="icon-text">
                             <img src="./../images/icons/location.svg" alt="lokace Medic Car Ruční mytí vozu">
-                            <a href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank">
+                            <a href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank"
+                                aria-label="Lokace Ruční mytí vozu">
                                 V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1
                             </a>
                         </div>

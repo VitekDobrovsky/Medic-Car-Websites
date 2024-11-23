@@ -21,11 +21,11 @@
 
 <body class="page">
 
-    <header class="page__header page__header--home">
+    <header class="page__header page__header--home" aria-label="Hlavní záhlaví">
         <div class="section">
-            <nav class="navbar">
+            <nav class="navbar" aria-label="Hlavní navigace">
                 <div class="navbar__wrapper">
-                    <a href="index.html">
+                    <a href="index.html" aria-label="Domů">
                         <picture>
                             <source srcset="./images/logo/medic-car-logo.svg" type="image/svg+xml">
                             <img src="./images/logo/medic-car-logo.png" alt="Medic Car Logo" class="navbar__logo"
@@ -33,11 +33,11 @@
                         </picture>
                     </a>
                     <div class="navbar__items navbar__items--home">
-                        <div class="icon-text navbar__item">
+                        <div class="icon-text navbar__item" aria-label="Telefonní číslo">
                             <img src="./images/icons/phone.svg" alt="telefonní číslo Medic Car">
                             <a href="tel:+420776156123" class="small-paragraph">+420 776 156 123</a>
                         </div>
-                        <div class="icon-text navbar__item">
+                        <div class="icon-text navbar__item" aria-label="Emailová adresa">
                             <img src="./images/icons/envelope.svg" alt="emailová adresa Medic Car">
                             <a href="mailto:info@medic-car.cz" class="small-paragraph">info@medic-car.cz</a>
                         </div>
@@ -45,7 +45,7 @@
                 </div>
             </nav>
 
-            <div class="page__intro" id="intro">
+            <div class="page__intro" id="intro" aria-label="Úvodní sekce">
                 <div>
                     <h1 class="h3">My jsme <strong>Medic Car</strong> a</h1>
                     <h2 class="h1 h1--intro">Staráme se o vás i o vaše auto</h2>
@@ -60,10 +60,9 @@
 
             </div>
         </div>
-
     </header>
 
-    <main class="page__services section" id="služby">
+    <main class="page__services section" id="služby" aria-label="Služby">
         <a href="./pages/autoservis.html" class="card card--left">
             <img class="card__icon" src="./images/icons/servis.svg" alt="Medic Car auto a pneu servis icon">
             <h3>Auto & Pneu Servis</h3>
@@ -82,9 +81,9 @@
         </a>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" aria-label="Patička">
         <div class="footer__wrapper">
-            <div class="footer__logo-wrapper">
+            <div class="footer__logo-wrapper" aria-label="Logo">
                 <a href="index.html">
                     <picture>
                         <source srcset="./images/logo/medic-car-logo.svg" type="image/svg+xml">
@@ -93,7 +92,7 @@
                     </picture>
                 </a>
             </div>
-            <div class="footer__page-content">
+            <div class="footer__page-content" aria-label="Obsah stránky">
                 <h5>Obsah</h5>
                 <ul>
                     <li><a href="index.html">Úvod</a></li>
@@ -104,7 +103,7 @@
                 </ul>
             </div>
 
-            <div class="footer__contact">
+            <div class="footer__contact" aria-label="Kontaktní informace">
                 <h5>Kontakt</h5>
                 <div class="footer__contact-wrapper">
                     <div class="footer__contact-row-1">
