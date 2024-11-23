@@ -88,6 +88,36 @@ function submitForm() {
     message: formData.get("message"),
   };
 
+  // Clear previous validation messages
+  document.querySelectorAll(".validation-message").forEach((msg) => msg.remove());
+
+  // Validation
+  let isValid = true;
+  if (!data.name) {
+    isValid = false;
+    const nameInput = document.getElementById("name");
+    nameInput.insertAdjacentHTML("afterend", "<span class='validation-message'>Vyplňte jméno.</span>");
+  }
+  if (!data.email) {
+    isValid = false;
+    const emailInput = document.getElementById("email");
+    emailInput.insertAdjacentHTML("afterend", "<span class='validation-message'>Vyplňte email.</span>");
+  }
+  if (!data.subject) {
+    isValid = false;
+    const subjectInput = document.getElementById("subject");
+    subjectInput.insertAdjacentHTML("afterend", "<span class='validation-message'>Vyplňte předmět.</span>");
+  }
+  if (!data.message) {
+    isValid = false;
+    const messageInput = document.getElementById("message");
+    messageInput.insertAdjacentHTML("afterend", "<span class='validation-message'>Vyplňte obsah.</span>");
+  }
+
+  if (!isValid) {
+    return;
+  }
+
   console.log(data); // You can replace this with actual form submission logic
 
   // Simulate form submission
