@@ -878,6 +878,19 @@
     border-radius: 4px;
   }
 
+  .email-sent {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-top: 40%;
+  }
+
+  .email-sent p {
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
   .email-form--green {
     background: linear-gradient(
       180deg,
@@ -889,6 +902,7 @@
   #contactForm {
     display: flex;
     flex-direction: column;
+    transition: all 0.5s ease;
   }
 
   .email-form label,
@@ -1060,6 +1074,7 @@
 
   .btn:hover {
     background-color: var(--primary, #178bf6);
+    cursor: pointer;
   }
 
   /* card */

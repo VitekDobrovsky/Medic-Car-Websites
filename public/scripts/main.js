@@ -77,3 +77,41 @@ document.addEventListener("DOMContentLoaded", function () {
 
   updateTestimonial(currentTestimonialIndex);
 });
+
+function submitForm() {
+  const form = document.getElementById("contactForm");
+  const formData = new FormData(form);
+  const data = {
+    name: formData.get("name"),
+    email: formData.get("email"),
+    subject: formData.get("subject"),
+    message: formData.get("message"),
+  };
+
+  console.log(data); // You can replace this with actual form submission logic
+
+  // Simulate form submission
+  setTimeout(() => {
+    form.reset();
+    form.classList.add("email-sent");
+    form.innerHTML = "<p>Email poslán!</p>";
+    form.addEventListener(
+      "click",
+      () => {
+        form.classList.remove("email-sent");
+        form.innerHTML = `
+        <label for="name">Jméno:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="subject">Předmět:</label>
+        <input type="text" id="subject" name="subject" required>
+        <label for="message">Obsah:</label>
+        <textarea id="message" name="message" required></textarea>
+        <a class="btn" onclick="submitForm()">Odeslat</a>
+      `;
+      },
+      { once: true }
+    );
+  }, 500);
+}
