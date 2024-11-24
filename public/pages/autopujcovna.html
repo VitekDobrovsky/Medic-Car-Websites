@@ -41,8 +41,10 @@
                     </div>
                     <div class="navbar__items" id="navbarItems">
                         <a class="navbar__item small-paragraph" href="#nabídka" aria-label="Nabídka">Nabídka</a>
-                        <a class="navbar__item small-paragraph" href="#o-nás" aria-label="Lokace & Otevírací Doba">Lokace & Otevírací Doba</a>
-                        <a class="navbar__item small-paragraph" href="#často-kladené-dotazy" aria-label="Často kladené dotazy">FAQ</a>
+                        <a class="navbar__item small-paragraph" href="#o-nás"
+                            aria-label="Lokace & Otevírací Doba">Lokace & Otevírací Doba</a>
+                        <a class="navbar__item small-paragraph" href="#často-kladené-dotazy"
+                            aria-label="Často kladené dotazy">FAQ</a>
                         <a class="navbar__item small-paragraph" href="#kontakt" aria-label="Kontakt">Kontakt</a>
                     </div>
                 </div>
@@ -62,12 +64,14 @@
 
     <div class="sticky-contact sticky-contact--taxi">
         <div class="icon-text">
-            <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <svg width="19" height="24" viewBox="0 0 19 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                aria-hidden="true">
                 <path
                     d="M10.6727 23.4607C13.2109 20.4435 19 13.1309 19 9.02335C19 4.04171 14.7448 0 9.5 0C4.25521 0 0 4.04171 0 9.02335C0 13.1309 5.78906 20.4435 8.32734 23.4607C8.93594 24.1798 10.0641 24.1798 10.6727 23.4607ZM9.5 6.01557C10.3399 6.01557 11.1453 6.33246 11.7392 6.89653C12.333 7.4606 12.6667 8.22564 12.6667 9.02335C12.6667 9.82106 12.333 10.5861 11.7392 11.1502C11.1453 11.7142 10.3399 12.0311 9.5 12.0311C8.66015 12.0311 7.85469 11.7142 7.26083 11.1502C6.66696 10.5861 6.33333 9.82106 6.33333 9.02335C6.33333 8.22564 6.66696 7.4606 7.26083 6.89653C7.85469 6.33246 8.66015 6.01557 9.5 6.01557Z"
                     fill="#2a8b00" />
             </svg>
-            <a class="paragraph" href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank" aria-label="Adresa: V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1">
+            <a class="paragraph" href="https://maps.app.goo.gl/hzEjGfjBm14fYJYY7" target="_blank"
+                aria-label="Adresa: V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1">
                 V Zátiší 5490/7, 466 01 Jablonec nad Nisou 1
             </a>
         </div>
@@ -75,12 +79,15 @@
 
     <section class="section page__cars" id="nabídka">
         <h3 class="h2">Co si u nás můžete půjčit?</h3>
-        <p class="paragraph">Vyberte si z nabídky vozů a zarezervujte si ho online!</p>
+        <p class="paragraph">Vyberte si z nabídky vozů na půjčení!</p>
         <div class="page__cars-wrapper">
-            <div class="car car--skodovka-III-1">
+
+            <div class="car car--skodovka-III-1"
+                onclick="document.getElementById('zavolat').scrollIntoView({ behavior: 'smooth' });">
                 <div class="car__info">
                     <div class="icon-text">
-                        <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
                             <path
                                 d="M8.48214 9.5C9.76763 9.5 11.0005 8.99955 11.9094 8.10876C12.8184 7.21796 13.3291 6.00978 13.3291 4.75C13.3291 3.49022 12.8184 2.28204 11.9094 1.39124C11.0005 0.500445 9.76763 0 8.48214 0C7.19665 0 5.96382 0.500445 5.05484 1.39124C4.14586 2.28204 3.6352 3.49022 3.6352 4.75C3.6352 6.00978 4.14586 7.21796 5.05484 8.10876C5.96382 8.99955 7.19665 9.5 8.48214 9.5ZM6.75163 11.2812C3.02176 11.2812 0 14.2426 0 17.8979C0 18.5064 0.503627 19 1.12464 19H15.8396C16.4607 19 16.9643 18.5064 16.9643 17.8979C16.9643 14.2426 13.9425 11.2812 10.2127 11.2812H6.75163Z"
                                 fill="#2a8b00" />
@@ -94,7 +101,9 @@
 
                 <a href="" class="btn btn--rounded car__btn" aria-label="Více informací o Škoda Octavia III">&#8594;</a>
             </div>
-            <div class="car car--skodovka-IV">
+
+            <div class="car car--skodovka-IV"
+                onclick="document.getElementById('zavolat').scrollIntoView({ behavior: 'smooth' });">
                 <div class="car__info">
                     <div class="icon-text">
                         <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -111,7 +120,9 @@
 
                 <a href="" class="btn btn--rounded car__btn" aria-label="Více informací o Škoda Octavia IV">&#8594;</a>
             </div>
-            <div class="car car--skodovka-III-2">
+
+            <div class="car car--skodovka-III-2"
+                onclick="document.getElementById('zavolat').scrollIntoView({ behavior: 'smooth' });">
                 <div class="car__info">
                     <div class="icon-text">
                         <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -128,7 +139,9 @@
 
                 <a href="" class="btn btn--rounded car__btn" aria-label="Více informací o Škoda Octavia III">&#8594;</a>
             </div>
-            <div class="car car--transporter">
+
+            <div class="car car--transporter"
+                onclick="document.getElementById('zavolat').scrollIntoView({ behavior: 'smooth' });">
                 <div class="car__info">
                     <div class="icon-text">
                         <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,7 +216,12 @@
         </div>
     </section>
 
-    <section class="faq faq--detailing" id="často-kladené-dotazy">
+    <div class="page__call-taxi page__call--autopujcovna" id="zavolat" aria-label="Sekce zavolat taxi">
+        <p class="h3 page__call-taxi-item">Zarezervujte si vozidlo!</p>
+        <h6 class="h2 page__call-taxi-item">+420 776 156 123</h6>
+    </div>
+
+    <section class="faq faq--autopujcovna" id="často-kladené-dotazy">
         <div class="faq__wrapper">
             <h2 class=" h4 h4--big faq__title">Často kladené dotazy</h2>
             <h3 class="h3">(FAQ)</h3>
@@ -281,8 +299,8 @@
                 <h5>Obsah</h5>
                 <ul>
                     <li><a href="./../index.html">Úvod</a></li>
-                    <li><a href="./../pages/taxi.html">Taxi Služby</a></li>
                     <li><a href="./../pages/autoservis.html">Auto & Pneu Servis</a></li>
+                    <li><a href="./../pages/taxi.html">Taxi Služby</a></li>
                     <li><a href="./../pages/autopujcovna.html">Autopůjčovna</a></li>
                     <li><a href="./../pages/rucnimyti.html">Ruční Mytí Vozu</a></li>
                 </ul>

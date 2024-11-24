@@ -27,10 +27,6 @@ html {
   scroll-padding-top: 100px;
 }
 
-.page {
-  overflow-x: hidden;
-}
-
 .page--green {
   --primary: #7ed259;
   --dark-blue: #78bf59;
@@ -68,6 +64,14 @@ html {
 
 .steps_step {
   display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.steps .btn {
+  padding: 0.9em 2em;
+  background-color: #315372;
+  font-size: 1.05em;
 }
 
 .steps__step-one::before {
@@ -167,7 +171,7 @@ html {
 .sticky-contact {
   z-index: 100;
   position: sticky;
-  top: 0;
+  top: 0; /* Changed from top: 0px; to top: 0; */
   padding: 1em 0;
   background-color: var(--white, white);
   display: flex;
@@ -386,6 +390,25 @@ html {
   margin: 0px 0px;
 }
 
+.page__call--autoservis {
+  margin-top: -7em;
+  margin-bottom: -7em;
+}
+
+.page__call-taxi--detailing {
+  height: auto;
+  margin-top: 5em;
+}
+
+.page__call-taxi--detailing .h2 {
+  font-size: 44px;
+}
+
+.page__call--autopujcovna {
+  background-image: none;
+  margin-top: 3em;
+}
+
 .page__call-taxi-item {
   margin: 0;
 }
@@ -457,12 +480,15 @@ html {
 }
 
 .page__rezervation {
-  height: 1000px;
-  margin-top: 430px;
   padding: 3em 1em;
 }
+
 .page__rezervation .steps {
   place-content: center;
+}
+
+.bookme {
+  margin-top: 0px;
 }
 
 .page__rezervation .h2,
@@ -478,6 +504,7 @@ html {
   text-align: center;
   margin-bottom: 15em;
   align-items: center;
+  margin-top: 15em;
 }
 
 .page__rezervation-text {
@@ -510,14 +537,12 @@ html {
 }
 
 .steps {
-  margin: 0 auto;
-  display: grid;
-  gap: 56px;
+  display: flex;
+  gap: 10em;
+  flex-wrap: wrap;
 }
 
 .steps__text-wrapper {
-  padding-top: 0.3em;
-  padding-left: 1em;
   display: grid;
   gap: 0.3em;
 }
@@ -526,7 +551,6 @@ html {
   font-weight: 650;
   font-family: "Montserrat", sans-serif;
   color: var(--dark, #010321);
-  font-family: "Montserrat", sans-serif;
   font-size: 32px;
   line-height: 34px;
 }
@@ -591,13 +615,7 @@ html {
 }
 
 .page__contact--green {
-  background-image: url(./../images/contact-bacground--green.svg); /* Fallback for browsers that do not support image-set */
-  background-image: -webkit-image-set(
-    url(./../images/contact-bacground--green.svg) type("image/svg+xml")
-  );
-  background-image: image-set(
-    url(./../images/contact-bacground--green.svg) type("image/svg+xml")
-  );
+  background-image: url(./../images/contact-bacground--green.svg);
 }
 .page__contact-image {
   border-radius: 4px;
@@ -789,6 +807,11 @@ html {
   margin-bottom: 10em;
 }
 
+.faq--autoservis {
+  margin-top: 20em;
+  margin-bottom: 10em;
+}
+
 .faq--detailing {
   margin-top: 15em;
   margin-bottom: 10em;
@@ -798,6 +821,11 @@ html {
   max-width: 800px;
   margin: 0 auto;
   padding: 0 1em;
+}
+
+.faq--autopujcovna {
+  margin-top: 4em;
+  margin-bottom: 10em;
 }
 
 .faq__title {
@@ -1245,6 +1273,7 @@ a {
   background-position: top;
   gap: 8px;
   background-size: cover;
+  cursor: pointer;
 }
 
 .car:hover .car__btn {

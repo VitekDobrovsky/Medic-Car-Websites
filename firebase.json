@@ -3,24 +3,28 @@
     "public": "public",
     "rewrites": [
       {
-        "source": "/",
+        "source": "/home",
         "destination": "/index.html"
       },
       {
         "source": "/taxi",
-        "destination": "/pages/taxi.html"
+        "destination": "/pages/taxi.html",
+        "type": 301
       },
       {
         "source": "/autopujcovna",
-        "destination": "/pages/autopujcovna.html"
+        "destination": "/pages/autopujcovna.html",
+        "type": 301
       },
       {
         "source": "/autoservis",
-        "destination": "/pages/autoservis.html"
+        "destination": "/pages/autoservis.html",
+        "type": 301
       },
       {
         "source": "/rucni-myti",
-        "destination": "/pages/rucnimyti.html"
+        "destination": "/pages/rucnimyti.html",
+        "type": 301
       }
     ],
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
