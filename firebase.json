@@ -1,32 +1,33 @@
 {
   "hosting": {
     "public": "public",
+    "cleanUrls": true,
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "rewrites": [
       {
-        "source": "/home",
+        "source": "/",
         "destination": "/index.html"
       },
       {
-        "source": "/taxi",
-        "destination": "/pages/taxi.html",
-        "type": 301
+        "source": "/autoservis*",
+        "destination": "/autoservis.html"
       },
       {
-        "source": "/autopujcovna",
-        "destination": "/pages/autopujcovna.html",
-        "type": 301
+        "source": "/taxi*",
+        "destination": "/taix.html"
       },
       {
-        "source": "/autoservis",
-        "destination": "/pages/autoservis.html",
-        "type": 301
+        "source": "/autopujcovna*",
+        "destination": "/autopujcovna.html"
       },
       {
-        "source": "/rucni-myti",
-        "destination": "/pages/rucnimyti.html",
-        "type": 301
+        "source": "/rucnimyti*",
+        "destination": "/rucnimyti.html"
+      },
+      {
+        "source": "/404",
+        "destination": "/404.html"
       }
-    ],
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
+    ]
   }
 }
