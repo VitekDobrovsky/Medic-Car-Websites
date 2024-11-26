@@ -31,10 +31,6 @@
     scroll-padding-top: 100px;
   }
 
-  .page {
-    overflow: hidden;
-  }
-
   .page--green {
     --primary: #7ed259;
     --dark-blue: #78bf59;
