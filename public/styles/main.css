@@ -27,7 +27,7 @@
     background-color: var(--white, #ffffff);
     scroll-behavior: smooth;
     overflow-x: hidden;
-    overscroll-behavior: none;
+    overscroll-behavior-x: none;
     scroll-padding-top: 100px;
   }
 
