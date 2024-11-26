@@ -193,6 +193,10 @@
     margin-top: 1em;
   }
 
+  .sticky-contact--taxi .paragraph {
+    margin: 0;
+  }
+
   /* SECTIONS */
 
   /* header */
@@ -1100,11 +1104,18 @@
     color: var(--dark, #010321);
   }
 
+
+
   .paragraph--intro {
     max-width: 32em;
     margin-bottom: 4em;
     margin-top: 14px;
   }
+
+  .paragraph--intro--home {
+    max-width: 31em;
+  }
+
   .paragraph--intro-autoservis {
     max-width: 30em;
   }
@@ -1218,6 +1229,10 @@
     transition: 0.3s;
   }
 
+  .price span {
+    font-size: 12px;
+  }
+
   .card--autoservis:hover {
     background-color: var(--light-hover, #eaeaea);
   }
@@ -1265,8 +1280,8 @@
   }
 
   .car {
-    width: 320px;
-    height: 400px;
+    width: 310px;
+    height: 410px;
     transition: all 0.2s ease-out;
     display: flex;
     align-items: flex-end;
@@ -1289,6 +1304,7 @@
 
   .car:hover {
     transform: scale(1.004);
+    opacity: 0.95;
   }
 
   .car__info {
@@ -1297,32 +1313,20 @@
   }
 
   .car--skodovka-III-1 {
-    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg);
-  }
-  .car--skodovka-III-1:hover {
-    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-IV--light.jpg);
+    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg);
   }
 
   .car--skodovka-IV {
-    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg);
+    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg);
   }
-  .car--skodovka-IV:hover {
-    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III--light.jpg);
-  }
-
   .car--skodovka-III-2 {
     background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg);
-  }
-  .car--skodovka-III-2:hover {
-    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III-2--light.jpg);
   }
 
   .car--transporter {
     background-image: url(./../images/autopujcovna/nabidka/wv-transporter.jpg);
   }
-  .car--transporter:hover {
-    background-image: url(./../images/autopujcovna/nabidka/wv-transporter--light.jpg);
-  }
+
 
   .car__size,
   .car__name,
