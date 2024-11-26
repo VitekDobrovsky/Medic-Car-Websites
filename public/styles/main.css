@@ -31,6 +31,10 @@
     scroll-padding-top: 100px;
   }
 
+  .page {
+    overflow: hidden;
+  }
+
   .page--green {
     --primary: #7ed259;
     --dark-blue: #78bf59;
@@ -271,6 +275,7 @@
   /* partners */
   .page__partners {
     background-color: var(--light, #f6f6ff);
+    padding: 0 1em;
   }
   .page__partners-wrapper {
     padding: 2em 0;
@@ -404,10 +409,6 @@
   .page__call-taxi--detailing {
     height: auto;
     margin-top: 5em;
-  }
-
-  .page__call-taxi--detailing .h2 {
-    font-size: 44px;
   }
 
   .page__call--autopujcovna {
@@ -676,7 +677,7 @@
 
   @media (max-width: 787px) {
     .card--autoservis {
-      min-width: 100%;
+      min-width: 80%;
     }
   }
 
@@ -1406,7 +1407,7 @@
 
   @media (max-width: 420px) {
     .page__about-content {
-      padding: 0;
+      padding: 1em 0;
     }
 
     .page__location-map {
