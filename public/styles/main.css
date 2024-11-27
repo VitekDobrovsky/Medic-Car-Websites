@@ -383,10 +383,17 @@
     padding: 2em 0;
     margin: 10em 0;
     margin-bottom: 0;
+    text-align: center;
   }
 
-  .stripe__text {
-    text-align: center;
+  .stripe p {
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+  }
+
+  .stripe--margin-bottom {
+    margin-top: 0;
+    margin-bottom: 15em;
   }
 
   .page__call-taxi {
@@ -408,7 +415,6 @@
 
   .page__call-taxi--detailing {
     height: auto;
-    margin-top: 5em;
   }
 
   .page__call--autopujcovna {
