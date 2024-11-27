@@ -27,6 +27,10 @@
       {
         "source": "/404",
         "destination": "/404.html"
+      },
+      {
+        "source": "/lander",
+        "destination": "/index.html"
       }
     ]
   }

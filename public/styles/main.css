@@ -1104,8 +1104,6 @@
     color: var(--dark, #010321);
   }
 
-
-
   .paragraph--intro {
     max-width: 32em;
     margin-bottom: 4em;
@@ -1167,7 +1165,7 @@
     height: 350px;
     width: 300px;
     border-radius: 4px;
-    margin: -100px 0 0 0;
+    margin: -80px 0 0 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -1315,50 +1313,65 @@
   .car--skodovka-III-1 {
     background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg);
     background-image: -webkit-image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III.webp) type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg) type("image/jpeg")
+      url(./../images/autopujcovna/nabidka/skoda-octavia-III.webp)
+        type("image/webp"),
+      url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg)
+        type("image/jpeg")
     );
     background-image: image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III.webp) type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg) type("image/jpeg")
+      url(./../images/autopujcovna/nabidka/skoda-octavia-III.webp)
+        type("image/webp"),
+      url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg)
+        type("image/jpeg")
     );
   }
 
   .car--skodovka-IV {
     background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg);
     background-image: -webkit-image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-IV.webp) type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg) type("image/jpeg")
+      url(./../images/autopujcovna/nabidka/skoda-octavia-IV.webp)
+        type("image/webp"),
+      url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg)
+        type("image/jpeg")
     );
     background-image: image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-IV.webp) type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg) type("image/jpeg")
+      url(./../images/autopujcovna/nabidka/skoda-octavia-IV.webp)
+        type("image/webp"),
+      url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg)
+        type("image/jpeg")
     );
   }
   .car--skodovka-III-2 {
     background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg);
     background-image: -webkit-image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.webp) type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg) type("image/jpeg")
+      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.webp)
+        type("image/webp"),
+      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg)
+        type("image/jpeg")
     );
     background-image: image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.webp) type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg) type("image/jpeg")
+      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.webp)
+        type("image/webp"),
+      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg)
+        type("image/jpeg")
     );
   }
 
   .car--transporter {
     background-image: url(./../images/autopujcovna/nabidka/wv-transporter.jpg);
     background-image: -webkit-image-set(
-      url(./../images/autopujcovna/nabidka/wv-transporter.webp) type("image/webp"),
-      url(./../images/autopujcovna/nabidka/wv-transporter.jpg) type("image/jpeg")
+      url(./../images/autopujcovna/nabidka/wv-transporter.webp)
+        type("image/webp"),
+      url(./../images/autopujcovna/nabidka/wv-transporter.jpg)
+        type("image/jpeg")
     );
     background-image: image-set(
-      url(./../images/autopujcovna/nabidka/wv-transporter.webp) type("image/webp"),
-      url(./../images/autopujcovna/nabidka/wv-transporter.jpg) type("image/jpeg")
+      url(./../images/autopujcovna/nabidka/wv-transporter.webp)
+        type("image/webp"),
+      url(./../images/autopujcovna/nabidka/wv-transporter.jpg)
+        type("image/jpeg")
     );
   }
-
 
   .car__size,
   .car__name,
