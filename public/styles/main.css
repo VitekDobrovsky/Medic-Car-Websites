@@ -136,6 +136,38 @@
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
 
+  /* audio */
+  .audio-player {
+    background: var(--white, white);
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 300px;
+  }
+  .audio-player__title {
+    margin: 0 0 0.5rem 0.3rem;
+  }
+  .audio-player__controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .audio-player__button {
+    font-size: 1.2em;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .audio-player__timeline {
+    flex-grow: 1;
+  }
+  .page__audio-player {
+    position: absolute;
+    right: 2rem;
+    bottom: 1rem;
+  }
+
   @media (max-width: 768px) {
     .navbar__hamburger {
       display: flex;
@@ -204,28 +236,17 @@
     height: 780px;
     background-size: cover;
     background-position: left;
+    position: relative;
   }
   .page__header--home {
     background-image: url(./../images/hlavni-strana/header-image.jpg); /* Fallback for browsers that do not support image-set */
-    background-image: -webkit-image-set(
-      url(./../images/hlavni-strana/header-image.webp) type("image/webp"),
-      url(./../images/hlavni-strana/header-image.jpg) type("image/jpeg")
-    );
-    background-image: image-set(
-      url(./../images/hlavni-strana/header-image.webp) type("image/webp"),
-      url(./../images/hlavni-strana/header-image.jpg) type("image/jpeg")
-    );
+    background-image: -webkit-image-set(url(./../images/hlavni-strana/header-image.webp) type("image/webp"), url(./../images/hlavni-strana/header-image.jpg) type("image/jpeg"));
+    background-image: image-set(url(./../images/hlavni-strana/header-image.webp) type("image/webp"), url(./../images/hlavni-strana/header-image.jpg) type("image/jpeg"));
   }
   .page__header--autoservis {
     background-image: url(./../images/autoservis/header-image.jpg); /* Fallback for browsers that do not support image-set */
-    background-image: -webkit-image-set(
-      url(./../images/autoservis/header-image.webp) type("image/webp"),
-      url(./../images/autoservis/header-image.jpg) type("image/jpeg")
-    );
-    background-image: image-set(
-      url(./../images/autoservis/header-image.webp) type("image/webp"),
-      url(./../images/autoservis/header-image.jpg) type("image/jpeg")
-    );
+    background-image: -webkit-image-set(url(./../images/autoservis/header-image.webp) type("image/webp"), url(./../images/autoservis/header-image.jpg) type("image/jpeg"));
+    background-image: image-set(url(./../images/autoservis/header-image.webp) type("image/webp"), url(./../images/autoservis/header-image.jpg) type("image/jpeg"));
     height: 850px;
   }
   .page__intro--autoservis {
@@ -234,38 +255,20 @@
 
   .page__header--pujcovna {
     background-image: url(./../images/autopujcovna/header-image.jpg); /* Fallback for browsers that do not support image-set */
-    background-image: -webkit-image-set(
-      url(./../images/autopujcovna/header-image.webp) type("image/webp"),
-      url(./../images/autopujcovna/header-image.jpg) type("image/jpeg")
-    );
-    background-image: image-set(
-      url(./../images/autopujcovna/header-image.webp) type("image/webp"),
-      url(./../images/autopujcovna/header-image.jpg) type("image/jpeg")
-    );
+    background-image: -webkit-image-set(url(./../images/autopujcovna/header-image.webp) type("image/webp"), url(./../images/autopujcovna/header-image.jpg) type("image/jpeg"));
+    background-image: image-set(url(./../images/autopujcovna/header-image.webp) type("image/webp"), url(./../images/autopujcovna/header-image.jpg) type("image/jpeg"));
   }
 
   .page__header--taxi {
     background-image: url(./../images/taxi/header-image.jpg); /* Fallback for browsers that do not support image-set */
-    background-image: -webkit-image-set(
-      url(./../images/taxi/header-image.webp) type("image/webp"),
-      url(./../images/taxi/header-image.jpg) type("image/jpeg")
-    );
-    background-image: image-set(
-      url(./../images/taxi/header-image.webp) type("image/webp"),
-      url(./../images/taxi/header-image.jpg) type("image/jpeg")
-    );
+    background-image: -webkit-image-set(url(./../images/taxi/header-image.webp) type("image/webp"), url(./../images/taxi/header-image.jpg) type("image/jpeg"));
+    background-image: image-set(url(./../images/taxi/header-image.webp) type("image/webp"), url(./../images/taxi/header-image.jpg) type("image/jpeg"));
   }
 
   .page__header--detailing {
     background-image: url(./../images/rucni-myti/header-image.jpg); /* Fallback for browsers that do not support image-set */
-    background-image: -webkit-image-set(
-      url(./../images/rucni-myti/header-image.webp) type("image/webp"),
-      url(./../images/rucni-myti/header-image.jpg) type("image/jpeg")
-    );
-    background-image: image-set(
-      url(./../images/rucni-myti/header-image.webp) type("image/webp"),
-      url(./../images/rucni-myti/header-image.jpg) type("image/jpeg")
-    );
+    background-image: -webkit-image-set(url(./../images/rucni-myti/header-image.webp) type("image/webp"), url(./../images/rucni-myti/header-image.jpg) type("image/jpeg"));
+    background-image: image-set(url(./../images/rucni-myti/header-image.webp) type("image/webp"), url(./../images/rucni-myti/header-image.jpg) type("image/jpeg"));
   }
 
   .page__intro {
@@ -428,14 +431,8 @@
 
   .page__about {
     background-image: url(./../images/autoservis/budova.jpg); /* Fallback for browsers that do not support image-set */
-    background-image: -webkit-image-set(
-      url(./../images/autoservis/budova.webp) type("image/webp"),
-      url(./../images/autoservis/budova.jpg) type("image/jpeg")
-    );
-    background-image: image-set(
-      url(./../images/autoservis/budova.webp) type("image/webp"),
-      url(./../images/autoservis/budova.jpg) type("image/jpeg")
-    );
+    background-image: -webkit-image-set(url(./../images/autoservis/budova.webp) type("image/webp"), url(./../images/autoservis/budova.jpg) type("image/jpeg"));
+    background-image: image-set(url(./../images/autoservis/budova.webp) type("image/webp"), url(./../images/autoservis/budova.jpg) type("image/jpeg"));
     background-size: cover;
     background-position: left;
     padding: 5em;
@@ -443,14 +440,8 @@
 
   .page__about--detailing {
     background-image: url(./../images/rucni-myti/budova.jpg); /* Fallback for browsers that do not support image-set */
-    background-image: -webkit-image-set(
-      url(./../images/rucni-myti/budova.webp) type("image/webp"),
-      url(./../images/rucni-myti/budova.jpg) type("image/jpeg")
-    );
-    background-image: image-set(
-      url(./../images/rucni-myti/budova.webp) type("image/webp"),
-      url(./../images/rucni-myti/budova.jpg) type("image/jpeg")
-    );
+    background-image: -webkit-image-set(url(./../images/rucni-myti/budova.webp) type("image/webp"), url(./../images/rucni-myti/budova.jpg) type("image/jpeg"));
+    background-image: image-set(url(./../images/rucni-myti/budova.webp) type("image/webp"), url(./../images/rucni-myti/budova.jpg) type("image/jpeg"));
     background-position: center;
   }
 
@@ -609,14 +600,8 @@
 
   .page__contact {
     background-image: url(./../images/contact-bacground.png); /* Fallback for browsers that do not support image-set */
-    background-image: -webkit-image-set(
-      url(./../images/contact-bacground.svg) type("image/svg+xml"),
-      url(./../images/contact-bacground.png) type("image/png")
-    );
-    background-image: image-set(
-      url(./../images/contact-bacground.svg) type("image/svg+xml"),
-      url(./../images/contact-bacground.png) type("image/png")
-    );
+    background-image: -webkit-image-set(url(./../images/contact-bacground.svg) type("image/svg+xml"), url(./../images/contact-bacground.png) type("image/png"));
+    background-image: image-set(url(./../images/contact-bacground.svg) type("image/svg+xml"), url(./../images/contact-bacground.png) type("image/png"));
     background-position: top;
     background-size: cover;
     display: flex;
@@ -970,11 +955,7 @@
   }
 
   .email-form--green {
-    background: linear-gradient(
-      180deg,
-      rgb(212, 235, 216) 0%,
-      rgb(225, 240, 227) 100%
-    );
+    background: linear-gradient(180deg, rgb(212, 235, 216) 0%, rgb(225, 240, 227) 100%);
   }
 
   #contactForm {
@@ -1179,6 +1160,8 @@
     padding-top: 2em;
     transition: 0.3s;
     text-decoration: none;
+    position: relative;
+    z-index: 10;
   }
   .card .second {
     display: flex;
@@ -1319,64 +1302,30 @@
   .car--skodovka-III-1 {
     background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg);
     background-image: -webkit-image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III.webp)
-        type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg)
-        type("image/jpeg")
+      url(./../images/autopujcovna/nabidka/skoda-octavia-III.webp) type("image/webp"),
+      url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg) type("image/jpeg")
     );
-    background-image: image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III.webp)
-        type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg)
-        type("image/jpeg")
-    );
+    background-image: image-set(url(./../images/autopujcovna/nabidka/skoda-octavia-III.webp) type("image/webp"), url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg) type("image/jpeg"));
   }
 
   .car--skodovka-IV {
     background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg);
-    background-image: -webkit-image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-IV.webp)
-        type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg)
-        type("image/jpeg")
-    );
-    background-image: image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-IV.webp)
-        type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg)
-        type("image/jpeg")
-    );
+    background-image: -webkit-image-set(url(./../images/autopujcovna/nabidka/skoda-octavia-IV.webp) type("image/webp"), url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg) type("image/jpeg"));
+    background-image: image-set(url(./../images/autopujcovna/nabidka/skoda-octavia-IV.webp) type("image/webp"), url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg) type("image/jpeg"));
   }
   .car--skodovka-III-2 {
     background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg);
     background-image: -webkit-image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.webp)
-        type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg)
-        type("image/jpeg")
+      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.webp) type("image/webp"),
+      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg) type("image/jpeg")
     );
-    background-image: image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.webp)
-        type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg)
-        type("image/jpeg")
-    );
+    background-image: image-set(url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.webp) type("image/webp"), url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg) type("image/jpeg"));
   }
 
   .car--transporter {
     background-image: url(./../images/autopujcovna/nabidka/wv-transporter.jpg);
-    background-image: -webkit-image-set(
-      url(./../images/autopujcovna/nabidka/wv-transporter.webp)
-        type("image/webp"),
-      url(./../images/autopujcovna/nabidka/wv-transporter.jpg)
-        type("image/jpeg")
-    );
-    background-image: image-set(
-      url(./../images/autopujcovna/nabidka/wv-transporter.webp)
-        type("image/webp"),
-      url(./../images/autopujcovna/nabidka/wv-transporter.jpg)
-        type("image/jpeg")
-    );
+    background-image: -webkit-image-set(url(./../images/autopujcovna/nabidka/wv-transporter.webp) type("image/webp"), url(./../images/autopujcovna/nabidka/wv-transporter.jpg) type("image/jpeg"));
+    background-image: image-set(url(./../images/autopujcovna/nabidka/wv-transporter.webp) type("image/webp"), url(./../images/autopujcovna/nabidka/wv-transporter.jpg) type("image/jpeg"));
   }
 
   .car__size,
