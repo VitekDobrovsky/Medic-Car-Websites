@@ -6,10 +6,14 @@ const timeLabel = document.querySelector(".audio-player__time");
 playPauseBtn.addEventListener("click", () => {
   if (audio.paused) {
     audio.play();
-    playPauseBtn.textContent = "⏸";
+    playPauseBtn.innerHTML = `
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <rect x="6" y="4" width="4" height="16" fill="currentColor"/>
+  <rect x="14" y="4" width="4" height="16" fill="currentColor"/>
+</svg>`;
   } else {
     audio.pause();
-    playPauseBtn.textContent = "▶";
+    playPauseBtn.innerHTML = `<svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><polygon points="6,4 20,12 6,20" fill="currentColor"/></svg>`;
   }
 });
 audio.volume = 0.5;

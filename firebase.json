@@ -1,33 +1,10 @@
 {
   "hosting": {
     "public": "public",
-    "cleanUrls": true,
-    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
-    "rewrites": [
-      {
-        "source": "/",
-        "destination": "/index.html"
-      },
-      {
-        "source": "/autoservis*",
-        "destination": "/autoservis.html"
-      },
-      {
-        "source": "/taxi*",
-        "destination": "/taix.html"
-      },
-      {
-        "source": "/autopujcovna*",
-        "destination": "/autopujcovna.html"
-      },
-      {
-        "source": "/rucnimyti*",
-        "destination": "/rucnimyti.html"
-      },
-      {
-        "source": "/404",
-        "destination": "/404.html"
-      }
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
     ]
   }
 }
