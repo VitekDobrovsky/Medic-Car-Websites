@@ -32,7 +32,7 @@
   }
 
   .page--green {
-    --primary: #7ed259;
+    --primary: #37a807;
     --dark-blue: #78bf59;
     --secondary: #2a8b00;
     --light: #f0f7f1;
@@ -1305,33 +1305,19 @@
     text-align: left;
   }
 
-  .car--skodovka-III-1 {
-    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg);
-    background-image: -webkit-image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III.webp) type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg) type("image/jpeg")
-    );
-    background-image: image-set(url(./../images/autopujcovna/nabidka/skoda-octavia-III.webp) type("image/webp"), url(./../images/autopujcovna/nabidka/skoda-octavia-III.jpg) type("image/jpeg"));
+  .car--skodovka-rapid-spaceback {
+    background-image: url(./../images/autopujcovna/nabidka/skoda-rapid-spaceback.webp);
   }
 
-  .car--skodovka-IV {
-    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg);
-    background-image: -webkit-image-set(url(./../images/autopujcovna/nabidka/skoda-octavia-IV.webp) type("image/webp"), url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg) type("image/jpeg"));
-    background-image: image-set(url(./../images/autopujcovna/nabidka/skoda-octavia-IV.webp) type("image/webp"), url(./../images/autopujcovna/nabidka/skoda-octavia-IV.jpg) type("image/jpeg"));
+  .car--skodovka-scala {
+    background-image: url(./../images/autopujcovna/nabidka/skoda-scala.webp);
   }
-  .car--skodovka-III-2 {
-    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg);
-    background-image: -webkit-image-set(
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.webp) type("image/webp"),
-      url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg) type("image/jpeg")
-    );
-    background-image: image-set(url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.webp) type("image/webp"), url(./../images/autopujcovna/nabidka/skoda-octavia-III-2.jpg) type("image/jpeg"));
+  .car--skodovka-III {
+    background-image: url(./../images/autopujcovna/nabidka/skoda-octavia-III.webp);
   }
 
-  .car--transporter {
-    background-image: url(./../images/autopujcovna/nabidka/wv-transporter.jpg);
-    background-image: -webkit-image-set(url(./../images/autopujcovna/nabidka/wv-transporter.webp) type("image/webp"), url(./../images/autopujcovna/nabidka/wv-transporter.jpg) type("image/jpeg"));
-    background-image: image-set(url(./../images/autopujcovna/nabidka/wv-transporter.webp) type("image/webp"), url(./../images/autopujcovna/nabidka/wv-transporter.jpg) type("image/jpeg"));
+  .car--podvalnik {
+    background-image: url(./../images/autopujcovna/nabidka/podvalnik.webp);
   }
 
   .car__size,
