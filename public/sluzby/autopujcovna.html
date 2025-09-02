@@ -41,6 +41,7 @@
                     </div>
                     <div class="navbar__items" id="navbarItems">
                         <a class="navbar__item small-paragraph" href="#nabídka" aria-label="Nabídka">Nabídka</a>
+                        <a class="navbar__item small-paragraph" href="#ceník" aria-label="Ceník">Ceník</a>
                         <a class="navbar__item small-paragraph" href="#o-nás"
                             aria-label="Lokace & Otevírací Doba">Lokace & Otevírací Doba</a>
                         <a class="navbar__item small-paragraph" href="#často-kladené-dotazy"
@@ -80,12 +81,17 @@
 
     <section class="section page__cars" id="nabídka">
         <h3 class="h2">Co si u nás můžete půjčit?</h3>
-        <p class="paragraph">Vyberte si z nabídky vozů na půjčení!</p>
+        <p class="paragraph">Vyberte si z nabídky vozů na půjčení!
+            Ceny jsou uvedeny pro prvních 7 dní a do dojezdu 200km.
+            Za každý kilometr nad 200km se platí 3kč/km. Nad 7 dní po individuální dohodě. Detailní informace najdete v
+            našem
+            <a href="#ceník">ceníku</a>.
+        </p>
         <div class="page__cars-wrapper">
 
             <div class="car car--skodovka-rapid-spaceback"
                 onclick="document.getElementById('zavolat').scrollIntoView({ behavior: 'smooth' });"
-                aria-label="Škoda Rapid - Spaceback, 1000 Kč/den, 4 + 1 osob">
+                aria-label="Škoda Rapid - Spaceback, 999 Kč/den, 4 + 1 osob">
                 <div class="car__info">
                     <div class="icon-text">
                         <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg"
@@ -98,16 +104,16 @@
                         <a class="car__size" aria-label="Velikost auta: 4 + 1 osob">4 + 1 osob</a>
                     </div>
                     <h6 class="car__name h3">Škoda Rapid Spaceback</h6>
-                    <p class="car__price">1000 Kč/den</p>
+                    <p class="car__price">999 Kč/den</p>
                 </div>
 
-                <a href="" class="btn btn--rounded car__btn"
+                <a href="#zavolat" class="btn btn--rounded car__btn"
                     aria-label="Více informací o Škoda Rapid - Spaceback">&#8594;</a>
             </div>
 
             <div class="car car--skodovka-scala"
                 onclick="document.getElementById('zavolat').scrollIntoView({ behavior: 'smooth' });"
-                aria-label="Škoda Scala, 1000 Kč/den, 4 + 1 osob">
+                aria-label="Škoda Scala, 999 Kč/den, 4 + 1 osob">
                 <div class="car__info">
                     <div class="icon-text">
                         <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -119,15 +125,16 @@
                         <a class="car__size" aria-label="Velikost auta: 4 + 1 osob">4 + 1 osob</a>
                     </div>
                     <h6 class="car__name h3">Škoda Scala</h6>
-                    <p class="car__price">1000 Kč/den</p>
+                    <p class="car__price">999 Kč/den</p>
                 </div>
 
-                <a href="" class="btn btn--rounded car__btn" aria-label="Více informací o Škoda Scala">&#8594;</a>
+                <a href="#zavolat" class="btn btn--rounded car__btn"
+                    aria-label="Více informací o Škoda Scala">&#8594;</a>
             </div>
 
             <div class="car car--skodovka-III"
                 onclick="document.getElementById('zavolat').scrollIntoView({ behavior: 'smooth' });"
-                aria-label="Škoda Octavia III, 1000 Kč/den, 4 + 1 osob">
+                aria-label="Škoda Octavia III, 999 Kč/den, 4 + 1 osob">
                 <div class="car__info">
                     <div class="icon-text">
                         <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -139,15 +146,16 @@
                         <a class="car__size" aria-label="Velikost auta: 4 + 1 osob">4 + 1 osob</a>
                     </div>
                     <h6 class="car__name h3">Škoda Octavia III</h6>
-                    <p class="car__price">1000 Kč/den</p>
+                    <p class="car__price">999 Kč/den</p>
                 </div>
 
-                <a href="" class="btn btn--rounded car__btn" aria-label="Více informací o Škoda Octavia III">&#8594;</a>
+                <a href="#zavolat" class="btn btn--rounded car__btn"
+                    aria-label="Více informací o Škoda Octavia III">&#8594;</a>
             </div>
 
             <div class="car car--podvalnik"
                 onclick="document.getElementById('zavolat').scrollIntoView({ behavior: 'smooth' });"
-                aria-label="Podvalník, 800 Kč/den">
+                aria-label="Podvalník, 799 Kč/den">
                 <div class="car__info">
                     <div class="icon-text">
                         <svg width="17" height="19" viewBox="0 0 17 19" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -159,11 +167,97 @@
                         <a class="car__size" aria-label="Velikost auta: 7 + 1 osob">1 osobní vůz, max. 2.750 kg</a>
                     </div>
                     <h6 class="car__name h3">Podvalník</h6>
-                    <p class="car__price">800 Kč/den</p>
+                    <p class="car__price">799 Kč/den</p>
                 </div>
 
-                <a href="" class="btn btn--rounded car__btn" aria-label="Více informací o podvalníku">&#8594;</a>
+                <a href="#zavolat" class="btn btn--rounded car__btn"
+                    aria-label="Více informací o podvalníku">&#8594;</a>
             </div>
+        </div>
+    </section>
+
+    <section class="section pricing-section" id="ceník">
+        <h3 class="h2">Ceník pronájmu vozidel</h3>
+
+        <div class="pricing-wrapper">
+            <div class="pricing-card">
+                <h4 class="h3 pricing-card__title">Osobní vozy</h4>
+                <div class="pricing-card__content">
+                    <div class="pricing-item">
+                        <h5 class="h4">Základní sazba</h5>
+                        <p class="pricing-item__price">999 Kč / den</p>
+                        <p class="pricing-item__description">pro pronájem 1-7 dní</p>
+                    </div>
+
+                    <div class="pricing-details">
+                        <h6 class="h5">Kilometrové limity</h6>
+                        <ul class="pricing-list">
+                            <li>Dojezd <strong>200 km</strong> zdarma</li>
+                            <li>Za každý km nad 200 km se účtuje <strong>3 Kč/km</strong></li>
+                        </ul>
+
+                        <h6 class="h5">Dlouhodobý pronájem</h6>
+                        <ul class="pricing-list">
+                            <li>Nad 7 dní po individuální dohodě dle celkového počtu najetých kilometrů</li>
+                        </ul>
+
+                        <h6 class="h5">V ceně zahrnuto</h6>
+                        <ul class="pricing-list">
+                            <li>Havarijní pojištění (spoluúčast 10 000 Kč)</li>
+                            <li>Dálniční známka</li>
+                        </ul>
+
+                        <h6 class="h5">Záloha</h6>
+                        <ul class="pricing-list">
+                            <li>Vratná kauce: <strong>5 000 Kč</strong></li>
+                        </ul>
+
+                        <h6 class="h5">Cesty do zahraničí</h6>
+                        <ul class="pricing-list">
+                            <li>Automobilové pojištění od Europ Assistance</li>
+                        </ul>
+                        <a href="https://www.europ-assistance.cz/sjednani-asistencnich-sluzeb-pro-automobily"
+                            target="_blank" class="pricing-link">
+                            Výpočet výše pojistného &#8594;
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pricing-card">
+                <h4 class="h3 pricing-card__title">Podvalník</h4>
+                <div class="pricing-card__content">
+                    <div class="pricing-item">
+                        <h5 class="h4">Základní sazba</h5>
+                        <p class="pricing-item__price">799 Kč / den</p>
+                        <p class="pricing-item__description">bez skrytých poplatků</p>
+                    </div>
+
+
+
+
+                    <div class="pricing-details">
+                        <h6 class="h5">Záloha</h6>
+                        <ul class="pricing-list">
+                            <li>Vratná kauce: <strong>5 000 Kč</strong></li>
+                        </ul>
+
+                        <h6 class="h5">Bez skrytých poplatků</h6>
+                        <ul class="pricing-list">
+                            <li>Transparentní cena bez dodatečných poplatků</li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="pricing-note">
+            <p class="small-paragraph">
+                <strong>Důležité:</strong> Cestu do zahraničí prosíme hlašte předem.
+                <strong>Vozidla nelze vracet v neděli.</strong>
+                Pro více informací nebo rezervaci volejte na <strong>+420 776 156 123</strong>
+            </p>
         </div>
     </section>
 
