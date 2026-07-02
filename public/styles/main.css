@@ -361,6 +361,10 @@
   .page__pricing-image {
     border-radius: 4px;
     margin: 0 auto;
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+    max-width: 650px;
   }
 
   .page__pricing-price {
