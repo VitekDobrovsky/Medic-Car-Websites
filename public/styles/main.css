@@ -347,10 +347,16 @@
     padding: 5em 0;
   }
 
-  @media (max-width: 660px) {
+  @media (max-width: 1075px) {
+    .page__pricing-content {
+      justify-content: center;
+    }
+
     .page__pricing-image {
       width: 100%;
+      margin-inline: auto;
       height: auto;
+      max-width: 100%;
     }
   }
 
