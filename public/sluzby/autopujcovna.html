@@ -20,6 +20,90 @@
     <meta name="keywords" content="Autopůjčovna, Rent Car, Medic Car, Jablonec nad Nisou, Liberec, Půjčovna Aut">
     <meta name="author" content="Medic Car">
     <title>Autopůjčovna | Medic Car - Jablonec nad Nisou</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "AutoRental",
+                "@id": "https://medic-car.cz/sluzby/autopujcovna.html#business",
+                "name": "Medic Car – Autopůjčovna",
+                "description": "Půjčovna osobních vozů a dodávek v Jablonci nad Nisou.",
+                "url": "https://medic-car.cz/sluzby/autopujcovna.html",
+                "telephone": "+420776156123",
+                "email": "info@medic-car.cz",
+                "image": "https://medic-car.cz/images/autopujcovna/auto.jpg",
+                "logo": "https://medic-car.cz/images/logo/medic-car-logo-big.png",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "V Zátiší 5490/7",
+                    "addressLocality": "Jablonec nad Nisou",
+                    "postalCode": "466 01",
+                    "addressRegion": "Liberecký kraj",
+                    "addressCountry": "CZ"
+                },
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": 50.713543,
+                    "longitude": 15.162518
+                },
+                "openingHoursSpecification": [
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": [
+                            "Monday",
+                            "Tuesday",
+                            "Wednesday",
+                            "Thursday",
+                            "Friday"
+                        ],
+                        "opens": "08:00",
+                        "closes": "17:00"
+                    },
+                    {
+                        "@type": "OpeningHoursSpecification",
+                        "dayOfWeek": "Saturday",
+                        "opens": "09:00",
+                        "closes": "12:00"
+                    }
+                ],
+                "areaServed": [
+                    {
+                        "@type": "City",
+                        "name": "Jablonec nad Nisou"
+                    },
+                    {
+                        "@type": "City",
+                        "name": "Liberec"
+                    }
+                ],
+                "parentOrganization": {
+                    "@id": "https://medic-car.cz/#organization"
+                }
+            },
+            {
+                "@type": "Organization",
+                "@id": "https://medic-car.cz/#organization",
+                "name": "Medic Car",
+                "legalName": "Autopneuservis Medic Car s.r.o.",
+                "url": "https://medic-car.cz/",
+                "logo": "https://medic-car.cz/images/logo/medic-car-logo-big.png",
+                "email": "info@medic-car.cz",
+                "telephone": "+420776156123",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "V Zátiší 5490/7",
+                    "addressLocality": "Jablonec nad Nisou",
+                    "postalCode": "466 01",
+                    "addressRegion": "Liberecký kraj",
+                    "addressCountry": "CZ"
+                },
+                "vatID": "CZ21103399",
+                "identifier": "IČO 21103399"
+            }
+        ]
+    }
+    </script>
 </head>
 
 <body class="page page--green">
@@ -370,6 +454,7 @@
 
                 <a class="btn" onclick="submitForm()" aria-label="Odeslat">Odeslat</a>
             </form>
+            <p class="form-note">Odesláním formuláře berete na vědomí <a href="./../ochrana-osobnich-udaju.html">zpracování osobních údajů</a> za účelem vyřízení vašeho dotazu.</p>
             <p id="statusMessage"></p>
         </div>
         <div class="page__contact-row2">
@@ -535,7 +620,7 @@
                 </div>
             </div>
 
-            <p id="copywrite">&copy; 2025 Medic Car s.r.o. | Web zaparkoval <a href="https://www.dobrovskyvit.cz/" target="_blank" rel="noopener">Vít Dobrovský</a></p>
+            <p id="copywrite">&copy; 2025 Medic Car s.r.o. | <a href="./../ochrana-osobnich-udaju.html">Ochrana osobních údajů</a> | Web zaparkoval <a href="https://www.dobrovskyvit.cz/" target="_blank" rel="noopener">Vít Dobrovský</a></p>
         </div>
     </footer>
 </body>

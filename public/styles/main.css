@@ -1853,4 +1853,49 @@
       padding: 0 0.5em;
     }
   }
+
+  /* legal */
+  .legal__header {
+    max-width: 860px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+
+  .legal {
+    max-width: 860px;
+    padding-bottom: 4em;
+  }
+
+  .legal .h4 {
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .legal .paragraph {
+    margin-bottom: 0.8em;
+  }
+
+  .legal ul {
+    padding-left: 1.2em;
+  }
+
+  .legal li {
+    margin-bottom: 0.5em;
+  }
+
+  .legal a {
+    color: var(--dark, #010321);
+  }
+
+  .form-note {
+    max-width: 336px;
+    margin-top: 1.5em;
+    font-size: 12px;
+    line-height: 16px;
+    color: var(--gray, #565a7c);
+  }
+
+  .form-note a {
+    color: inherit;
+  }
 }
